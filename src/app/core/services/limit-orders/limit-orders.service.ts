@@ -224,7 +224,7 @@ export class LimitOrdersService {
   private getProjectTokenPrices(chainId: number): Observable<Record<string, string>> {
     if (chainId === blockchainId.ETH) {
       return this.httpClient.get<Record<string, string>>(
-        `https://token-prices.1inch.io/v1.1/${chainId}/0x3330BFb7332cA23cd071631837dC289B09C33333`
+        `https://token-prices.1inch.io/v1.1/${chainId}/0xf4a509313437dfc64e2efed14e2b607b1aed30c5`
       );
     }
 

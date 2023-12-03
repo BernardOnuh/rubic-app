@@ -74,7 +74,7 @@ export class StatisticsService {
       Injector.web3PublicService
         .getWeb3Public(BLOCKCHAIN_NAME.ETHEREUM)
         .callContractMethod<string>(
-          '0x3330BFb7332cA23cd071631837dC289B09C33333',
+          '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
           STAKING_ROUND_THREE.TOKEN.abi,
           'totalSupply'
         )
@@ -111,7 +111,7 @@ export class StatisticsService {
   public getRBCPrice(): Observable<number> {
     return this.coingeckoApiService.getCommonTokenPrice(
       BLOCKCHAIN_NAME.ETHEREUM,
-      '0x3330bfb7332ca23cd071631837dc289b09c33333'
+      '0xf4a509313437dfc64e2efed14e2b607b1aed30c5'
     );
   }
 

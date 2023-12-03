@@ -119,7 +119,7 @@ export class StakingService {
     return from(
       this.tokensService.getAndUpdateTokenPrice(
         {
-          address: '0x3330bfb7332ca23cd071631837dc289b09c33333',
+          address: '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
           blockchain: BLOCKCHAIN_NAME.ETHEREUM
         },
         true

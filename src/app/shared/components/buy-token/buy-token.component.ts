@@ -78,7 +78,7 @@ export class BuyTokenComponent {
       },
       to: {
         blockchain: BLOCKCHAIN_NAME.ETHEREUM,
-        address: '0x3330BFb7332cA23cd071631837dC289B09C33333',
+        address: '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
         symbol: 'RBC'
       }
     };
