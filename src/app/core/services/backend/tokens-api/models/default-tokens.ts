@@ -18,6 +18,15 @@ export const defaultTokens: Record<BlockchainName, Token[]> = {
   ),
   [BLOCKCHAIN_NAME.ETHEREUM]: [
     {
+      blockchain: BLOCKCHAIN_NAME.ETHEREUM,
+      address: '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
+      name: 'FE TECH',
+      symbol: 'FETS',
+      decimals: 18,
+      image: 'assets/images/futurehouse.png',
+      ...defaultTokenParams
+    },
+    {
       ...nativeTokensList[BLOCKCHAIN_NAME.ETHEREUM],
       ...defaultTokenParams,
       image: 'assets/images/icons/default-tokens/eth.png'
@@ -27,15 +36,7 @@ export const defaultTokens: Record<BlockchainName, Token[]> = {
       ...defaultTokenParams,
       image: 'assets/images/icons/default-tokens/weth.png'
     } as Token,
-    {
-      blockchain: BLOCKCHAIN_NAME.ETHEREUM,
-      address: '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
-      name: 'FE TECH',
-      symbol: 'FETS',
-      decimals: 18,
-      image: 'assets/images/futurehouse.png',
-      ...defaultTokenParams
-    },
+
     {
       blockchain: BLOCKCHAIN_NAME.ETHEREUM,
       address: '0xdac17f958d2ee523a2206206994597c13d831ec7',
