@@ -5,8 +5,8 @@ type Token = Omit<BlockchainToken, 'blockchain'> & { blockchain: EvmBlockchainNa
 
 export const newRubicToken: Token = {
   decimals: 18,
-  symbol: 'FET',
-  name: 'RUBIC TOKEN',
+  symbol: 'FETS',
+  name: 'FE TECH',
   address: '0x10aaed289a7b1b0155bf4b86c862f297e84465e0',
-  blockchain: BLOCKCHAIN_NAME.ARBITRUM
+  blockchain: BLOCKCHAIN_NAME.ETHEREUM
 };
