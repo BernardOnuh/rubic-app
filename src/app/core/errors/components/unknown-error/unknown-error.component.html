@@ -1,0 +1,14 @@
+<div class="content">
+  Oops, something went wrong
+  <span
+    class="content__icon"
+    [inlineSVG]="'assets/images/icons/copy.svg'"
+    (click)="copyToClipboard()"
+    [tuiHint]="template"
+    [tuiHintManual]="hintShown"
+  ></span>
+  <br />
+  Please, try another provider.
+</div>
+
+<ng-template #template>Error copied on clipboard. Please, send it to our support!</ng-template>

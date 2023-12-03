@@ -1,0 +1,97 @@
+@use 'src/scss/core' as *;
+
+:host ::ng-deep {
+  --tui-height-l: 50px;
+  --tui-height-s: 35px;
+  --tui-focus: transparent;
+
+  [tuiButton] {
+    font-weight: 400 !important;
+    font-size: $rubic-font-size-01;
+
+    border: none;
+
+    transition: 0.3s;
+
+    &.full-width {
+      width: 100%;
+    }
+
+    &._focused:not(&._pressed) {
+      border-color: var(--primary-color);
+    }
+
+    &._focused::after {
+      border: 0;
+    }
+
+    &._with-dropdown:focus {
+      background-color: inherit;
+    }
+
+    &._disabled {
+      border: 0;
+
+      ::ng-deep .t-wrapper {
+        color: rgba($rubic-text-disable, 0.7);
+
+        background-color: var(--primary-background);
+        opacity: 1 !important;
+
+        @include light-iframe {
+          background-color: var(--iframe-primary-background);
+        }
+      }
+    }
+
+    &[data-tui-host-size='l'] {
+      ::ng-deep .t-wrapper {
+        padding: 0 29px;
+      }
+    }
+
+    &[data-tui-host-size='s'] {
+      ::ng-deep .t-wrapper {
+        padding: 0 15px;
+      }
+    }
+
+    ::ng-deep img {
+      transition: 0.3s;
+    }
+
+    &.full-width {
+      width: 100%;
+    }
+
+    &[data-appearance='outline'] {
+      font-weight: 500;
+
+      border: 1px solid var(--primary-color);
+    }
+
+    &[data-appearance='secondary'] {
+      border: 0;
+    }
+
+    &[data-appearance='primary'] {
+      ::ng-deep .t-wrapper {
+        transition: none;
+      }
+    }
+  }
+}
+
+::ng-deep .loader {
+  stroke: var(--primary-color) !important;
+}
+
+:host(.tokens__btn) {
+  [tuiButton] {
+    &[data-tui-host-size='s'] {
+      ::ng-deep .tokens__clear {
+        margin-right: -5px;
+      }
+    }
+  }
+}

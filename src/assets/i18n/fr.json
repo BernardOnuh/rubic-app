@@ -1,0 +1,872 @@
+{
+  "common": {
+    "from": "De",
+    "to": "Vers",
+    "yes": "Oui",
+    "no": "Non",
+    "any": "Tous",
+    "error": "Erreur",
+    "have": "Vous avez",
+    "get": "Vous obtenez",
+    "want": "Vous voulez obtenir",
+    "confirm": "Confirmer",
+    "copy": "Copier",
+    "accept": "Accepter",
+    "copyright": "Copyright",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Terms of Service",
+    "close": "Fermer",
+    "send": "Envoyer",
+    "left": "Restant",
+    "checkOnScanner": "Vérifier sur l'explorateur de bloc",
+    "cancel": "Annuler",
+    "add": "Ajouter",
+    "via": "Via ",
+    "address": "adresse",
+    "chooseToken": "Choisir le jeton",
+    "clearToken": "Réinitialiser le jeton",
+    "warning": "Attention",
+    "customerSupport": "service client",
+    "OK": "OK",
+    "analytics": "Analyse technique",
+    "minutes": "minutes",
+    "swap": "Échanger",
+    "approve": "Approuver",
+    "switchTo": "Basculer sur le réseau {{ networkName }}",
+    "tradeVia": "Échanger Via ",
+    "bridge": "Bridge",
+    "transactionDetails": "Détails de la transaction",
+    "tagline": {
+      "firstText": "Cross-Chain Swaps",
+      "numbers": "15,000+ ",
+      "secondText": "Assets"
+    },
+    "revert": "Revert",
+    "refreshTrade": "Actualiser le commerce",
+    "complete": "Complete"
+  },
+  "errors": {
+    "rejectedNetworkSwitch": "You rejected the network switch.",
+    "noMetamaskAccess": "Vous ne nous avez pas autorisé à accéder à votre portefeuille MetaMask. Pour autoriser la transaction, vous devez la signer. Veuillez cliquer sur \"Connecter\" si vous souhaitez poursuivre.",
+    "noMetamaskInstalled": "Veuillez vous assurer que le plugin MetaMask est installé et connecté. Vous pouvez le télécharger sur",
+    "noBitKeepInstalled": "Please make sure that you have bitKeep plugin installed and unlocked.\nYou can download it on",
+    "removeCoinbaseExtension": "L'extension de navigateur Coinbase est en conflit avec l'extension Metamask. Veuillez désactiver ou supprimer l'extension Coinbase pour continuer, ou choisir un autre portefeuille pour vous connecter.",
+    "wrongNetwork": "Vous avez sélectionné le mauvais réseau. Veuillez choisir {{ networkToChoose }} dans MetaMask.",
+    "OverQueryLimit": "Vous avez tenté d'exécuter trop de transactions  et avez dépassé les restrictions du bridge Binance de 3 transactions maximum en 30 minutes. Veuillez réessayer plus tard. Si le problème persiste, veuillez contacter notre",
+    "userReject": "Vous avez refusé l'exécution de la transaction. Veuillez confirmer l'exécution pour conclure l'échange.",
+    "rubicError": "Veuillez réessayer plus tard ou essayez d'utiliser un autre appareil. Si vous rencontrez toujours des problèmes, veuillez contacter notre",
+    "insufficientFunds": "Vous n'avez pas assez de {{ tokenSymbol }}. Votre solde est de {{balance}} {{tokenSymbol}}, mais vous devez disposer de {{requiredBalance}} {{tokenSymbol}}.",
+    "insufficientFunds1inch": "Vous n'avez pas assez de {{ tokenSymbol }} pour couvrir le transfert et les frais de gaz. Veuillez demander un montant moindre ou recharger en {{ nativeToken }}.",
+    "noQrCode": "Veuillez scanner le QR code.",
+    "walletlinkWrongNetwork": "Veuillez vous assurer que le réseau {{ networkToChoose }} est sélectionné dans l'application Coinbase. Pour changer de réseau dans l'application Coinbase, accédez aux paramètres dans le panneau inférieur et sélectionnez l'onglet \"Réseau actif\".",
+    "noWallet": "Vous n'avez pas connecté de portefeuille. Pour utiliser pleinement nos fonctionnalités, vous devez en connecter un.",
+    "retrievingTokensError": "Erreur lors de la récupération des jetons",
+    "wrongToken": "Le bridge Rubic ne prend en charge que le jeton Rubic.",
+    "oneInchQuote": "Erreur de cotation de 1inch",
+    "notSupportedNetwork": "{{networkToChoose}} n'est pas supporté par le portefeuille sélectionné.",
+    "signReject": "Vous avez refusé la connexion avec votre portefeuille. Veuillez confirmer la connexion avec votre portefeuille afin d'utiliser pleinement notre application.",
+    "lowGas": "Le gaz alloué à la transaction est insuffisant. Il n'y a pas assez de gaz pour couvrir les frais de la transaction. Veuillez augmenter le gaz",
+    "noSelectedProvider": "Veuillez sélectionner un DEX",
+    "notSupportedItNetwork": "Nous ne permettons pas les échanges instantanés sur le réseau choisi",
+    "notSupportedBridge": "Ce bridge est actuellement indisponible. Veuillez sélectionner un bridge disponible.",
+    "insufficientLiquidityCCR": "Liquidité insuffisante pour cet échange",
+    "insufficientLiquidityIT": "Liquidité insuffisante pour cet échange",
+    "oneinchRefreshError": "1inch est actuellement indisponible. Veuillez réessayer plus tard.",
+    "1inchNotSupportedToken": "1inch ne supporte pas l'un des tokens sélectionné.",
+    "cancelDeadline": "Votre transaction a été annulée car elle n'a pas pu être traitée dans le délai imparti. Veuillez augmenter le délai ou le montant en gaz.",
+    "chooseSupportedBridge": "Choisissez un bridge compatible",
+    "InsufficientBalance": "Solde insuffisant",
+    "chooseNetworkWallet": "Veuillez choisir le réseau {{blockchain}} dans votre portefeuille",
+    "noEnteredAmount": "Entrez un montant",
+    "minimumAmount": "Le montant minimum est de  ≈{{amount}} {{token}}",
+    "maximumAmount": "Le montant maximum est de  ≈{{amount}} {{token}}",
+    "maxGasPriceOverflow": "Le prix du gaz sur {{toBlockchain}} est trop élevé. Veuillez réessayer plus tard.",
+    "crossChainIsUnavailable": "Les échanges Cross-Chain sont actuellement indisponibles. Veuillez réessayer plus tard.",
+    "multichainWallet": "Rubic ne prend pas encore en charge les portefeuilles multi-chaînes. Actuellement, vous ne pouvez échanger que sur le réseau Ethereum",
+    "unknown": "Oups, quelque chose s'est mal passé, veuillez réessayer",
+    "insufficientFoundsGasPriceValue": "Montant pour les frais de gaz insuffisants. Veuillez recharger en {{ nativeToken }}.",
+    "rubicOptimisation": "Liquidité insuffisante pour cet échange. Essayez en désactivant le routage optimisé Rubic.",
+    "partialTradesData": "Impossible de récupérer les données de transactions du serveur. Veuillez recharger la page ou contacter le support si le problème persiste.",
+    "tradingIsNotAvailable": "Échanges non disponibles",
+    "wrongWallet": "Veuillez vous identifier avec un portefeuille compatible avec le réseau {{network}}",
+    "invalidTargetAddress": "Adresse de réseau de destination incorrecte",
+    "solSwap": "Veuillez déballer le jeton SOL pour l'échanger. Choisissez SOL comme deuxième jeton.",
+    "unsupportedTokenCCR": "Une erreur s'est produite lors de la tentative d'envoi de la transaction.\nIl est possible que vous essayiez de vendre un jeton qui n'est actuellement pas pris en charge en multi-chaînes.",
+    "rpcError": "Une erreur s'est produite, pour savoir quoi faire pour la résoudre suivez le lien ci-dessous.",
+    "buttonLink": "En savoir plus",
+    "wrongPromoterWallet": "Vous avez connecté un portefeuille qui n'est pas compatible avec Ethereum. Veuillez vous déconnecter de votre compte et connecter un portefeuille compatible Ethereum (par exemple, MetaMask).",
+    "walletNotInstalled": "Le portefeuille n'est pas installé.",
+    "crossChainSwapUnavailable": "Malheureusement, cet échange utilisant le fournisseur calculé n'est actuellement pas disponible. Rubic recalculera l'itinéraire pour votre swap.",
+    "noSelectedToken": "Sélectionnez le Token",
+    "wrongSourceNetwork": "Les swaps du réseau {{ network ]} ne sont actuellement pas pris en charge."
+  },
+  "navigation": { 
+    "recentTrades": "Recent Trades",
+    "changeNowRecentTrades": "ChangeNow Tx",
+    "about": "À propos",
+    "faq": "FAQ",
+    "features": "Fonctionnalités",
+    "project": "Projet",
+    "referral": "Referral Program",
+    "setupWidget": "Setup Widget",
+    "sdk": "SDK",
+    "team": "Team",
+    "login": "Connecter le portefeuille",
+    "logout": "Déconnexion",
+    "logoutMessage": "Voulez vous vraiment vous déconnecter ?",
+    "notAvailable": "En construction - refonte UX.",
+    "merch": "Boutique",
+    "stakingLp": "Earn",
+    "staking": "Staking",
+    "promotion": "Promotion"
+  },
+  "aboutPage": {
+    "description": "Rubic est un écosystème DeFi multichaîne qui propose des échanges cross-chaînes, en P2P, des échanges instantanés et des ordres limites sur plusieurs blockchains, dans le but de fournir une plate-forme décentralisée UNIQUE complète.",
+    "benefits": {
+      "0": {
+        "title": "Routage personnalisé",
+        "description": "Rubic a créé un système de routage unique qui permet à ses utilisateurs d'échanger n'importe quel token. L'avantage principal est de pouvoir calculer le prix du gaz au plus juste et de pouvoir proposer à ses utilisateurs la meilleure route possible tout en payant un minimum de gaz."
+      },
+      "1": {
+        "title": "Échanges instantanés",
+        "description": "Exécutez un échange instantané grâce aux nombreux DEX externes supportés (mais avec les meilleurs taux !)"
+      },
+      "2": {
+        "title": "Support Multi-chaînes",
+        "description": "Blockchains supportées actuellement : Ethereum, Binance Smart Chain & Polygon"
+      },
+      "3": {
+        "title": "Échanges Cross-chains",
+        "description": "Compléter des échanges entre ces réseaux : BSC <-> Ethereum & Polygon <-> Ethereum"
+      },
+      "4": {
+        "title": "Faucet",
+        "description": "Notre Faucet va permettre à nos utilisateurs d'acheter des jetons en utilisant RBC or ETH sans KYC (Connaissance du Client). Actuellement, nos utilisateurs peuvent acheter du BNB, mais plus à venir !"
+      },
+      "5": {
+        "title": "Échanges P2P",
+        "description": "Créez votre échange selon vos propres termes."
+      },
+      "6": {
+        "title": "Ordre Limite",
+        "description": "Définissez le taux souhaité et votre transaction sera exécutée automatiquement lorsque l'un des DEX répondra aux paramètres de votre transaction"
+      }
+    },
+    "features": {
+      "title": "Fonctionnalités du DEX Rubic",
+      "data": {
+        "0": "Widget iFrame",
+        "1": "Routage personnalisé",
+        "2": "Échanges Cross-Chain",
+        "3": "Support Multi-chaînes : Réseaux Ethereum, Binance Smart Chain & Polygon",
+        "4": "Possibilité de faire des crowdsales",
+        "5": "Le pourcentage des revenus de la plateforme peut-être réglementé",
+        "6": "Échanges instantanés",
+        "7": "Ventes Publiques/Privées",
+        "8": "Support des courtiers",
+        "9": "Pas de limite de volume",
+        "10": "Jetons personnalisés",
+        "11": "Préviens les scams et \"rugpulls\"",
+        "12": "Ordres Limites pour Ethereum",
+        "13": "Création de bridges personnalisés",
+        "14": "Faucet BNB"
+      }
+    },
+    "contract": {
+      "title": "Contrat Rubic"
+    },
+    "roadmap": {
+      "title": "Feuille de route",
+      "data": {
+        "0": {
+          "quarter": "T1. 2021",
+          "month": "mois",
+          "done": "1",
+          "data": [
+            "Intégrations de nouvelles blockchains et DEX",
+            "Binance Smart Chain Transactions instantanées",
+            "Solutions Cross-Chain pour ETH et BSC",
+            "Compatibilité Mobile",
+            "Ordres Limites pour ETH",
+            "Création du jeton BRBC et bridge personnalisé pour RBC-BRBC",
+            "Prise en charge des jetons personnalisés",
+            "Fonction de bridge personnalisés",
+            "Système de routage personnalisé"
+          ]
+        },
+        "1": {
+          "quarter": "T2. 2021",
+          "month": "Avril",
+          "done": "1",
+          "data": [
+            "Prise en charge des jetons personnalisés",
+            "Fonction de bridge personnalisés",
+            "Système de routage personnalisé"
+          ]
+        },
+        "2": {
+          "quarter": "T2. 2021",
+          "month": "Mai",
+          "done": "1",
+          "data": [
+            "CoinGecko et CoinMarketCap API pour ETH<>RBC",
+            "Faucet BNB",
+            "Récap des Échanges instantanés",
+            "Refonte UI simple",
+            "Ordre Limite BSC"
+          ]
+        },
+        "3": {
+          "quarter": "T2. 2021",
+          "month": "Juin",
+          "done": "1",
+          "data": [
+            "Refonte UI, étape 2",
+            "Support de nouveaux portefeuilles - Wallet Connect + Wallet Link (Coinbase)",
+            "Boutique",
+            "Suivi de toutes les paires de jetons sur CoinGecko & CMC",
+            "Intégration FIAT",
+            "Uniswap V3",
+            "Intégrations de nouvelles blockchains/Bridge (Candidats : Anyswap/XDai, HECO, Moonbeam, Fantom, Avalanche, RenBTC)",
+            "Faucet MATIC",
+            "Mises à jour diverses"
+          ]
+        },
+        "4": {
+          "quarter": "Q3. 2021",
+          "month": "Juillet",
+          "done": "1",
+          "data": [
+            "Routage Cross-Chain",
+            "Intégration de nouvelles Blockchains/Bridge",
+            "Refonte UI étape 3",
+            "Commission en RBC - étape 1"
+          ]
+        },
+        "5": {
+          "quarter": "Q3. 2021",
+          "month": "Août",
+          "done": "1",
+          "data": [
+            "Commission en RBC - étape 2",
+            "Anonymizer V1 - Polygon"
+          ]
+        },
+        "6": {
+          "quarter": "Q3. 2021",
+          "month": "Septembre",
+          "done": "1",
+          "data": [
+            "Début du développement du Cross-Chain Rubic 2.0, améliorant la stabilité et la décentralisation",
+            "Livraison du système de remboursement automatique",
+            "Création d'un support 24/7 pour notre communauté",
+            "Début d'intégration d'une nouvelle blockchain",
+            "Intégration du Rubic Relay Widget pour nos partenaires",
+            "Début du développement du SDK/API",
+            "Divers correctifs et améliorations pour notre solution Cross-Chain"
+          ]
+        },
+        "7": {
+          "quarter": "T4. 2021",
+          "month": "mois",
+          "done": "1",
+          "data": [
+            "Intégration de 0x et réduction des frais de gaz",
+            "Trois nouvelles blockchains intégrées (Compatible avec le Cross-Chain Rubic) parmis : Avalanche (AVAX), Cardano (ADA), Cosmos (ATOM), Polkadot (DOT), Kusama (KSM), Fantom (FTM), Elrond (EGLD), Enjin (ENJ), Pulse chain (ticker PLS), Optimism, Arbitrum",
+            "Stacking RBC",
+            "Widget : Livraison du SDK/API"
+          ]
+        },
+        "8": {
+          "quarter": "Q1-Q2. 2022\n",
+          "month": "mois",
+          "done": "1",
+          "data": [
+            "Intégration de Yield Farming et/ou Lending Product",
+            "Gouvernance",
+            "Intégration de 3-6 blockchains (Compatible avec le Cross-Chain Rubic)",
+            "RBC Staking 2.0",
+            "Version mobile (iOS, Android)",
+            "Intégration du bridge BTC"
+          ]
+        }
+      }
+    }
+  },
+  "faqPage": {
+    "title": "FAQ",
+    "questions": [
+      {
+        "title": "What is Rubic?",
+        "answer": "Rubic is a Cross-Chain Tech Aggregator for users & dApps. Rubic aggregates 60+ chains, 90+ DEXs & bridges, and enables swapping of 15,500+ assets in 1 click."
+      },
+      {
+        "title": "What is the Rubic Cross-Chain Tools?",
+        "answer": "Rubic’s Cross-Chain Tools enable your platform to act as a gateway to buy your project’s token. An easy-to-install Widget and a battle-tested SDK let your users swap from any of 15,500+ tokens across 60+ blockchains to your custom token!<br/><br/>Explore more: <a href='https://tools.rubic.exchange/' target='_blank' rel='noopener noreferrer'>https://tools.rubic.exchange/</a>"
+      },
+      {
+        "title": "What is BTCB?",
+        "answer": "BTCB (Bitcoin BEP2) is a token on the Binance Smart Chain (BSC) that represents Bitcoin (BTC) in a 1:1 ratio. It is a wrapped version of BTC that allows users to access BTC's value and features on the Binance Smart Chain network. BTCB provides liquidity and interoperability between the BSC and BTC, enabling users to trade or use BTC in decentralized applications on BSC."
+      },
+      {
+        "title": "Can I send BTCB to a BTC wallet address?",
+        "answer": "No, BTCB (Bitcoin BEP2) is a token on the Binance Smart Chain (BSC), and it cannot be sent directly to a BTC (Bitcoin) wallet address. BTCB operates on a different blockchain and requires a compatible BSC wallet for sending and receiving transactions."
+      },
+      {
+        "title": "Who can use our service?",
+        "answer": "Rubic is a cross-chain solution aggregator for users and dApps.<br/><br/><strong>Rubic’s B2B Features</strong>: Rubic’s Cross-Chain tools will help developers easily make their Web3 dApps cross-chain, aggregating the best cross-chain tech.<br/><br/><strong>Rubic’s B2C Features</strong>: Exchange 15,500+tokens across 60+ blockchains (both EVM and non-EVM, targeting 100+ chains by the end of 2023) with the best transaction speeds - in one click, with fiat on-ramps and limit orders for advanced trading."
+      },
+      {
+        "title": "How does Rubic unite different DEX platforms? ",
+        "answer": "Users will be able to choose the suitable DEX protocol in order to get the best tokens rates with the lowest gas prices. Rubic always analyzes and compares all the variants, and comes up with the best rate. Please notice that while checking all the alternatives we consider the GAS fee. Rubic strives to provide users with the best exchange opportunities. "
+      },
+      {
+        "title": "Why do we need to make a choice between different providers?",
+        "answer": "The gas fees and price rates of these protocols are different, therefore the opportunity of having more options empowers the users to make better trading decisions.\n\nMoreover, Rubic created a routing solution that will allow users to trade any token on different networks. Our self-created routing system for Ethereum has several advantages over the Uniswap routing system. The main advantage is the ability to calculate gas prices and show users the best-optimized solution while paying the least amount of gas.\n\nOur routing system gives users lower prices on their swaps than most DEXs. Users will receive quotes for lower prices in situations where the price difference between different swap outcomes costs more than the ANTICIPATED price difference for the miner’s commission fees. When this difference in swap price is more than the difference in miner’s commission fees, the user will be presented with an option for a cheaper swap route. In situations where this occurs, users will also be given an option with a more expensive gas fee and a longer route to execute the swap, due to potential issues with liquidity."
+      },
+      {
+        "title": "How To Contact Support?",
+        "answer": "If you need assistance, feel free to contact our support team here by submitting a ticket on our website or on our Telegram: <a href='https://t.me/RubicSupportBot' target='_blank'>https://t.me/RubicSupportBot</a>\n\n Live chat - Contact Rubic team for immediate assistance using chat. Available 24/7.\n\nEmail Support - <a href='mailto:support@rubic.finance'>support@rubic.finance</a>. Message Rubic Support anytime with more complex or technical questions. We're here to help."
+      },
+      {
+        "title": "What is the Rubic Relay widget and how can we integrate it?",
+        "answer": "The Rubic Relay is a great solution for the problems projects face regarding low user turnover.\nIt keeps users on your website, transforming trades into a simple action: the Relay offers users and project owners the function of buying and selling tokens on their own project’s webpage, leading users to stay on your website for longer out of sheer utility.\nThe Relay is also scalable across different devices, and it’s possible to change the colours and size of the Relay widget itself as well.\n\nHere is a detailed instructional guide for the Relay’s integration:\n <a href='https://drive.google.com/file/d/1ULxjzN3sVc2indb5-_PtR7v7jui_tCJ7/view?usp=sharing' target='_blank'>https://drive.google.com/file/d/1ULxjzN3sVc2indb5-_PtR7v7jui_tCJ7/view?usp=sharing</a>"
+      },
+      {
+        "title": "What should I do when I see the message “Trading is not available“?",
+        "answer": "If you get this message, try the following methods:\n1. Reload the page.\n2. Clear the website cache.\n\n If it didn’t help probably one of the tokens you try to swap doesn’t have enough liquidity for this trade."
+      },
+      {
+        "title": "Why does my On-Chain swap have a long-lasting “Pending” status?",
+        "answer": "Reason:\nIt’s possible that the gas fee that was set is not enough to process your transaction.\n\n How to solve:\n If the transaction is “Pending”, it is best to accelerate the transaction manually, by changing to the desired value of gas, in order to force the completion of the transaction. It can be done via your wallet. You will be able to pay an additional gas fee.\n\nIf you still need assistance, feel free to contact our support team hereby submitting a ticket or on Telegram <a href='https://t.me/RubicSupportBot' target='_blank'>https://t.me/RubicSupportBot</a>"
+      },
+      {
+        "title": "Why do I get the “Insufficient Balance” error?",
+        "answer": "If you swap a native token and you encounter this error it means that you are trying to send all of your transferable funds out, without leaving enough balance for the transaction fees. If you transfer a non-native token, a value exceeding the available balance has been entered in the “Amount” field. \nAlso, please check that you have connected the proper wallet and you have enough tokens for the swap.\nThe fee is shown on the transfer screen before you confirm the transfer. Deduct this amount from the total amount you're sending out, and your transfer will go through."
+      },
+      {
+        "title": "What should I do if I get the “Price Impact Too High” error?",
+        "answer": "Reason:\n This error is caused by low liquidity.\n\nTry trading a smaller amount, or increase slippage tolerance via the settings icon and try again. If that did not help, then the token’s liquidity is too low to swap."
+      },
+      {
+        "title": "What if my transaction has a “Dropped & Replaced” status on the scanner?",
+        "answer": "Dropped & Replaced\" means the transaction has been replaced by a new one.\n\n There are two possible reasons for that status:\n1. You have accelerated the transaction in your wallet and will receive the desired tokens, you can find out information about the transaction in the “Replaced by Txn Hash\" tab.\n2. You probably cancelled the transaction by mistake. The assets will not be debited from your address, but the gas fee will not be refunded back to you."
+      },
+      {
+        "title": "Why did I get the ”Expired” status on the scanner?",
+        "answer": "The transaction was not mined in the time period allotted for it.\n\nIn this scenario, the transaction should be sent again. Note that during the transaction, the gas spent on its execution is burned, but not completely. A gas fee is also charged for conducting the re-sent transaction."
+      },
+      {
+        "title": "Why do I get “Warning! Error Encountered During Contract Execution [Out of Gas]”?",
+        "answer": "Reason:\n There was not enough gas for the transaction.\n\n This scanner error means the gas limit you set was above the minimum but still not sufficient to get the transaction to execute. Please try again with a higher gas limit. Also, we recommend not to change the gas limit manually, your wallet will set the needed amount automatically."
+      },
+      {
+        "title": "Why do I have a long-lasting “Pending” status of a Multi-Chain transaction?",
+        "answer": "Presumably, gas prices increased dramatically during that time. \nIf the above methods did not help, please contact our support team via chat on the website or Telegram: <a href='https://t.me/RubicSupportBot' target='_blank'>https://t.me/RubicSupportBot</a>."
+      },
+      {
+        "title": "Why can't I do the multi-chain swap?",
+        "answer": "Unfortunately, we don’t support tokens with an included fee to sell via multi-chain routing. We are working on implementing this feature.\n For now we suggest you to sell these types of tokens for stable or native coins via on-chain swap and then do the multi-chain swap with the token you have bought.",
+        "id": "unsupportedTokenCCR"
+      },
+      {
+        "title": "Why do I get Method Execution Error: Error: Internal JSON-RPC error.",
+        "answer": "Temporal malfunction of the RPC used in the wallet for the chosen network. \nIf this error occurs, the transaction has not been sent and the money will not be debited from your wallet. ;\n Try sending your transaction again. If the problem still exists, try these steps:\n 1. Clear cache;\n 2. Increase slippage;\n 3. Increase gas limit.",
+        "id": "rpcError"
+      },
+      {
+        "title": "Rubic Autorefund Policy.",
+        "answer": "Rubic’s team will complete the refund in USDC tokens. The amount of the refund will be equal to the amount of tokens in USD at the moment when the trade was initiated. the refund will be completed in the target network. \n\nYou can find the detailed information about the Rubic's auto-refund system by using this <a href='https://docs.rubic.finance/multi-chain-protocol/rubic-auto-refund-policy' target='_blank' rel='noopener noreferrer'>link</a>."
+      }
+    ]
+  },
+  "promotionPage": {
+    "common": {
+      "switchWallet": "Basculer sur un portefeuille compatible Ethereum"
+    },
+    "invitations": {
+      "invitedProjects": "Projets invités",
+      "noProjects": "Vous n'avez pas encore invité de projets",
+      "tableColumns": {
+        "projectName": "Projet",
+        "invitationDate": "Invités",
+        "tradingVolume": "Volume d'échanges",
+        "received": "Reçus",
+        "receivedTokens": "Jetons reçus"
+      }
+    },
+    "statistics": {
+      "referralProgram": "Programme d'affiliation",
+      "invitedProjects": "Projets invités",
+      "totalRewards": "Récompenses gagnées",
+      "instantRewards": "Récompenses instantanées",
+      "earnWithOurWidget": "Gagnez de l'argent avec notre Widget",
+      "createAReferralLink": "Générez un lien d'affiliation et commencez à gagner de l'argent avec notre Widget. Assurez-vous de lire les règles du programme !",
+      "myPromoLink": "Mon lien d'affiliation",
+      "contactUs": "Contactez nous"
+    }
+  },
+  "bridgePage": {
+    "title": "Transférez des jetons avec un minimum de gaz",
+    "progressMessage": "Vous avez accepté la transaction d'approbation et le trade est en cours. Veuillez patienter jusqu'à sa complétion.",
+    "successMessage": "Le swap Cross-Chain est en cours. Veuillez patienter jusqu'à sa complétion sur les deux blockchains concernées.",
+    "approveProgressMessage": "Vous avez accepté la transaction et l'échange est en cours. Veuillez patienter jusqu'à sa complétion.",
+    "approveSuccessMessage": "Les tokens ont été approuvés. Appuyez sur le bouton \"Échanger\" pour continuer l'échange.",
+    "whatIs": "Qu'est-ce que ",
+    "getTokens": "Vous recevrez {{ toBlockchainName }} jetons à cette adresse"
+  },
+  "crossChainPage": {
+    "targetAddress": {
+      "hint": "Entrez une adresse de portefeuille compatible avec {{network}}. Vous recevez vos jetons à cette adresse.",
+      "placeholder": "Entrez ou copiez l'adresse"
+    },
+    "swapInfo": {
+      "title": "Le délai estimé pour recevoir des jetons sur la blockchain Ethereum dépend du prix du gaz et peut aller jusqu'à 10 minutes",
+      "maximumSent": "Maximum envoyé",
+      "maximumSentHint": "Quantité maximale de jetons qui seront envoyés",
+      "minimumReceived": "Minimum reçu",
+      "minimumReceivedHint": "Quantité minimale de jetons qui seront reçus",
+      "platformFee": "Frais de la platforme",
+      "platformFeeHint": "Frais de commission de la plateforme en jetons RBC"
+    },
+    "smartRouting": {
+      "save": "Économisez {{amount}}$ avec le routage intelligent Rubic",
+      "estTime": "Délai estimé ~ 80 sec",
+      "estTimeMobile": " ~ 80 sec"
+    },
+    "swapSchemeModal": {
+      "transactionCompleted": "Transaction completed successfully!",
+      "transactionIsBeingProcessed": "Your Transaction is Being Processed!",
+      "transactionNotCompleted": "Your transaction has not been completed!",
+      "transactionCanBeTracked": "Transaction status can also be tracked in",
+      "ifTransactionNotCompleted": "If your transaction seems to be taking longer than normal (more than 30 minutes), please contact our Support Team at",
+      "recentTrades": "Recent Trades"
+    }
+  },
+  "instantTrades": {
+    "title": "Échangez vos jetons en un clic",
+    "gasFeeMessage": "Estimation des frais de gaz. Il sera nécessaire de fournir plus de gaz dans MetaMask pour terminer l'échange, le gaz supplémentaire sera restitué une fois la transaction terminée.",
+    "gasFee": "Estimation du gaz",
+    "useOptimization": "Utiliser le routage optimisé Rubic",
+    "notAvailableBefore": "Échangez sur ",
+    "notAvailableAfter": " n'est pas disponible."
+  },
+  "recentTrades": {
+    "title": "Recent Trades",
+    "description": "History of your latest Crosschain Transactions:",
+    "swapNow": "Swap Now",
+    "noTransactions": "You don't have any Cross-Chain transactions yet",
+    "revert": "Revert",
+    "date": "Date",
+    "from": "From",
+    "statusFrom": "Status From",
+    "to": "To",
+    "statusTo": "Status To",
+    "fail": "Fail",
+    "pending": "Pending",
+    "success": "Success",
+    "fallback": "Fallback",
+    "unknown": "Unknown",
+
+    "waiting":"Waiting",
+    "confirming": "Confirming",
+    "exchanging":"Exchanging",
+    "sending": "Sending"
+  },
+  "gasRefund": {
+    "title": "Gaz remboursé",
+    "body": {
+      "refundAmount": "Montant remboursé",
+      "transactions": "Transactions",
+      "more": "plus"
+    },
+    "button": {
+      "refundAfter": "Réclamer plus tard",
+      "refund": "Réclamer"
+    },
+    "promoActions": {
+      "1": {
+        "label": "CRYPTOLOVE",
+        "description": "Recevez votre gaz en cashback pour avoir terminé le premier échange multi-chaînes sur notre plateforme !"
+      },
+      "2": {
+        "label": "Remboursement du gaz d'Avalanche",
+        "description": "Pour célébrer le lancement du routage optimisé Rubic multi-chaînes\n sur le réseau Avalanche, nous lançons une nouvelle campagne de remboursement de gaz ! Du 19 octobre au 2 novembre, nos utilisateurs pourront effectuer un échange en utilisant leurs jetons préférés sur le réseau Avalanche en utilisant le routage optimisé Rubic multi-chaînes et se faire rembourser leur gaz."
+      }
+    },
+    "notifications": {
+      "progress": {
+        "label": "Le remboursement du gaz est en cours",
+        "message": "Rubic finalise un remboursement de gaz. Veuillez patienter jusqu'à sa complétion."
+      },
+      "complete": {
+        "label": "Le remboursement du gaz est terminé !",
+        "message": "Le remboursement du gaz est terminé ! Merci d'avoir utilisé Rubic"
+      }
+    }
+  },
+  "tradesTable": {
+    "columns": {
+      "status": "Status",
+      "from": "De",
+      "to": "Vers",
+      "get": "Vous obtenez",
+      "send": "Vous recevez",
+      "expiresIn": "Expire dans",
+      "volume": "Volume",
+      "network": "Réseau",
+      "spent": "Dépensé",
+      "expected": "Attendu",
+      "date": "Date",
+      "provider": "Fournisseur",
+      "explorerLink": "Lien vers l'explorateur de bloc"
+    },
+    "statuses": {
+      "completed": "complété",
+      "pending": "en attente",
+      "canceled": "annulé",
+      "rejected": "rejeté",
+      "depositInProgress": "dépôt en cours",
+      "withdrawInProgress": "retrait en cours",
+      "waitingForDeposit": "En attente du dépôt",
+      "waitingForReceiving": "En attente du retrait",
+      "refunded": "Remboursé"
+    },
+    "noData": "Vous n'avez pas encore effectué d'échanges",
+    "receive": "Recevoir"
+  },
+  "tradePage": {
+    "getBefore": "Vous aurez",
+    "getMiddle": "jetons à cette adresse",
+    "getAfter": "une fois l'échange terminé",
+    "providerFee": "Frais du fournisseur",
+    "rbcLowFees": "Payer en RBC pour moins de frais",
+    "discountRBC": "discount en RBC",
+    "blockchainsHint": "Plus de blockchains",
+    "tradingNotAvailable": "Échanges non disponibles",
+    "rateIsUpdated": "Le prix est à jour"
+  },
+  "lp": {
+    "connectWalletToView": "Connect Wallet to View",
+    "currentlyAvailable": "Currently Available",
+    "lpRoundTitle": "Liquidity Providing: Round {{round}}",
+    "totalCollectedRewards": "Total Collected Rewards",
+    "collectRewardsNow": "Available Rewards",
+    "totalProvided": "Total Provided",
+    "youProvided": "You Provided (BRBC)",
+    "acquireBoth": "Acquire Both BRBC and USDC Tokens",
+    "provideLiquidity": "Provide Liquidity by Locking your BRBC and USDC",
+    "earlyWithdrawHint": "If you withdraw early, you will be fined with a penalty of 10% from the original amount of BRBC and USDC provided.",
+    "depositFunds": "Deposit funds",
+    "initiateDeposit": "Initiate Deposit",
+    "initiateDepositModalText": "Attention: You are depositing {{brbcAmount}} BRBC and {{usdcAmount}} USDC for a max period of 2 months. In the case of early withdrawal of your deposit, a penalty of 10% will be imposed on your BRBC and USDC deposit.",
+    "requestWithdraw": "Request Withdraw",
+    "withdraw": "Withdraw",
+    "requestWithdrawModalText": "Attention: Due to the early removal of your liquidity, a 10% percent penalty will be taken from your initial deposit of {{ brbcAmount }} BRBC and {{ usdcAmount }} USDC. By confirming, you leave a request which will be processed within a day. This period of time is needed to aggregate the liquidity you provided from all blockchains into the BNB Smart Chain network. After 24 hours, you will be able collect your deposit.",
+    "yourDeposits": "Your Deposits",
+    "newDeposit": "+ Initiate Deposit",
+    "transferToken": "Transfer LP Token",
+    "collectRewards": "Collect rewards $ {{amount}}",
+    "balance": "Balance",
+    "endOfRound": "End of Round {{round}}",
+    "poolIsFull": "Pool is Full",
+    "lpRoundEnded": "LP Round Ended",
+    "returnAfterDay": "Return after 24H",
+    "whitelistInfo": "If you participated in the 1st round of Staking, then you have the option to allocate of 800 USDC & 3200 BRBC will be available during 24 hours",
+    "ifDidNotParticipate": "If you did not participate, you will be able to enter the round after",
+    "notWhitelistUser": "Your address is not whitelist",
+    "initiateDepositWithWhitelist": "Initiate Deposit with Whitelist",
+    "emptyAmount": "Empty amount",
+    "depositLimitMax": "Current max limit is {{max}} BRBC",
+    "depositLimitMin": "Current min limit is {{min}} BRBC"
+  },
+  "staking": {
+    "common": {
+      "months": "months",
+      "rules": "Complete Staking Rules",
+      "connectWallet": "Connect Wallet",
+      "switchNetworkToArbitrum": "Switch to ARBITRUM network"
+    },
+    "overview": {
+      "title": "Overview",
+      "lockedRBC": "Locked RBC",
+      "$lockedRBC": "Locked RBC in $",
+      "circRBCLocked": "Percent of Locked RBC",
+      "avgLockTime": "Avg. Lock Time",
+      "estYieldPerWeek": "Est. Yield Per Week",
+      "apr": "AVERAGE APR"
+    },
+    "withdrawModal": {
+      "title": "WITHDRAWAL",
+      "text_1": "Please proceed to close your position.",
+      "text_1-1": " You will receive",
+      "text_2": "back",
+      "text_3": "and",
+      "text_4": "in rewards.",
+      "fullText": "Please proceed to close your position. You will receive 10 RBC back and 0.1 ETH in rewards.",
+      "withdraw": "Withdraw"
+    },
+    "newPositionModal": {
+      "title": "NEW POSITION",
+      "buttonText": "Ok, I agree"
+    },
+    "claimRewardsModal": {
+      "title": "CLAIM REWARDS",
+      "claim": "Claim"
+    },
+    "stakeForm": {
+      "title": "New Position",
+      "youHave": "You have",
+      "max": "MAX",
+      "duration": {
+        "title": "Choose the Duration",
+        "rewards": "Rewards",
+        "for": "for",
+        "months": "months",
+        "fullText": "Rewards x1.0 for 12 months",
+        "durationEndData": "Offer valid until"
+      },
+      "hint": {
+        "lockedRBCExpiresIn": "locked RBC expires in",
+        "lockedUntil": "Locked until",
+        "fullText": "10 locked RBC expires in 12 months. Locked until 23.05.2024"
+      },
+      "button": {
+        "entryIsClosed": "Entry is Closed",
+        "stakingStopped": "Staking has Stopped",
+        "approve": "Approve",
+        "insufficientBalance": "Insufficient balance",
+        "enterAnAmount": "Enter an Amount",
+        "minAmount": "Minimum amount is",
+        "stake": "Stake"
+      }
+    },
+    "deposits": {
+      "title": "Your Deposits",
+      "newPosition": "+ New Position",
+      "rewards": "Rewards",
+      "endDate": "End Date",
+      "claimRewards": "Claim Rewards",
+      "total": "TOTAL",
+      "totalRBC": "TOTAL RBC:",
+      "totalRewards": "TOTAL REWARDS:",
+      "withdraw": "Withdraw"
+    }
+  },
+  "maintenance": {
+    "title": "Maintenance en cours",
+    "text": "Ensemble, changeons le monde de la crypto."
+  },
+  "modals": {
+    "confirmImportModal": {
+      "title": "Veuillez confirmer votre import !",
+      "text": "Ce jeton n'est pas listé sur rubic.exchange.\nEn l'ajoutant en tant que jeton personnalisé, vous confirmez que vous acceptez de trader ce jeton à vos risques et périls"
+    },
+    "bridge": {
+      "receiveWarning": "Ce bridge consiste en deux transactions. Si vous initiez la transaction, vous ne pourrez pas l'annuler.",
+      "trackTrx": "Suivez l'état de la transaction dans <a target=\"_blank\" href=\"/my-trades\">Mes Transactions</a> et appuyez sur le bouton \"Recevoir\" lorsqu'il apparaît pour réclamer les jetons sur le réseau Ethereum."
+    },
+    "tokensListModal": {
+      "defaultTitle": "Liste des jetons",
+      "favoriteTokensTitle": "Jetons favoris",
+      "unsupportedPairsHint": "Ce token n'est pas disponible pour l'échange. Veuillez sélectionner les paires prises en charge.",
+      "clearParamsHint": "Effacez les autres paramètres du formulaire pour sélectionner ce token",
+      "searchPlaceholder": "Rechercher le nom ou coller l'adresse du contrat",
+      "noSearchData": "Rien à montrer",
+      "noFavoriteData": "Vous l'avez pas de jetons favoris sur le réseau sélectionné, ",
+      "backToTokens": "Retour à la liste des jetons",
+      "unauthorized": "Veuillez vous connecter pour ajouter des jetons aux favoris"
+    },
+    "walletsModal": {
+      "title": "Connecter le portefeuille",
+      "new": "Nouveau sur Ethereum ?",
+      "learnMore": "En apprendre plus sur les portefeuilles"
+    },
+    "coinbaseSelectNetworkModal": {
+      "title": "Choisissez le réseau d'origine",
+      "text": "Veuillez sélectionner le réseau d'origine des échanges. En connectant un portefeuille Coinbase, vous ne pourrez pas changer de réseau dans la session en cours. Pour changer de réseau après avoir connecté le portefeuille Coinbase, déconnectez-vous de votre compte et connectez-vous en choisissant un autre réseau ou utilisez un autre portefeuille."
+    },
+    "successTxModal": {
+      "see": "Voir ",
+      "transactionDetailsLink": "Détails de la transaction",
+      "itWillAppearsIn": "Ils s'afficheront bientôt sur la page ",
+      "myTradesLink": "Mes échanges",
+      "pageSoon": " .",
+      "title": "La transaction a été envoyée avec succès !",
+      "ccrTitle": "Échange sur le réseau d'origine effectué !",
+      "seeDetailsCCR": " If your transaction seems to be taking longer than normal (more than 30 minutes), please contact our Support Team at <a class='modal__footer-link' href='mailto:support@rubic.exchange' target='_blank'>support@rubic.exchange</a>",
+      "seeDetailsItBridge": "Voir les <a class='modal__footer-link' href='{{explorerLink}}' target='_blank'>details</a> de la transaction.",
+      "link": "Mes échanges"
+    },
+    "stakingSwapModal": {
+      "title": "Pour participer au stacking RBC, vous devez échanger des BRBC",
+      "aboutSwap": "<b>Tout sera traité automatiquement par nos soins</b> <br> La transaction prendra approximativement ~7 minutes.",
+      "aboutSign": "Vous devrez valider deux transactions : l'approbation et l'échange.",
+      "aboutMyself": "Mais vous pouvez échanger les jetons vous même.",
+      "agree": "Ok, j'accepte",
+      "swapMyself": "J'échange les jetons moi même"
+    },
+    "warningModal": {
+      "autoSlippage": "Malheureusement, le glissement personnalisé n'est pas autorisé pour cet échange. Veuillez activer le paramètre de tolérance de glissement automatique dans les paramètres.",
+      "highSlippage": "Slippage happens when traders buy or sell their assets for more or less than the expected price. During the transaction, the token price might change, so the trade has a chance to be less efficient or be front-runned by bots.",
+      "highPriceImpact": "Price impact refers to how underlying tokens will affect your trade/transaction based on the market price. In simple terms, this warning means that you might lose a substantial part of your crypto if you continue with your transaction.",
+      "slippageAmount": "The slippage for this trade is {{ slippage }}%",
+      "priceImpactAmount": "The price impact for this trade is {{ priceImpact }}%"
+    }
+  },
+  "settings": {
+    "instantTrades": {
+      "slippageTitle": "Tolérance au glissement du prix",
+      "slippage": "Votre transaction sera annulée si le prix change défavorablement davantage que le pourcentage saisi. (Un pourcentage inférieur diminue les chances que votre transaction soit devancée par la technique du front-run)",
+      "multihopsTitle": "Désactiver les multisauts",
+      "multihops": "Votre échange ne sera complété qu'avec des paires directes.",
+      "rubicOptimisationTitle": "Activer le routage optimisé Rubic",
+      "rubicOptimisation": "Le routage optimisé Rubic est activé par défaut. Cependant, vous pouvez le désactiver, la route commerciale optimale sera alors exécutée, mais sans tenir compte du coût du gaz.",
+      "deadlineTitle": "Délai de transaction",
+      "deadline": "Votre transaction sera annulée si le délai d'attente dépasse cette durée.",
+      "showReceiverAddressTitle": "Show Receiver Address",
+      "showReceiverAddress": "Show Receiver Address",
+      "autoRefreshTitle": "Rafraîchir automatiquement",
+      "autoRefresh": "Mettre à jour les paramètres transactionnels toutes les 15 secondes."
+    },
+    "bridge": {
+      "walletAddress": "L'adresse du portefeuille dans la blockchain TRON, sur laquelle les jetons seront fournis."
+    },
+    "crossChainRouting": {
+      "autoRefreshTitle": "Rafraîchir automatiquement",
+      "showReceiverAddressTitle": "Show Receiver Address",
+      "showReceiverAddress": "Show Receiver Address",
+      "autoRefresh": "Mettre à jour les paramètres transactionnels toutes les 30 secondes.",
+      "slippageTitle": "Tolérance au glissement du prix",
+      "slippage": "Votre transaction sera annulée si le prix change défavorablement davantage que le pourcentage saisi. (Un pourcentage inférieur diminue les chances que votre transaction soit devancée par la technique du front-run)",
+      "promoCodeTitle": "Code Promo",
+      "promoCodeHint": "Entrez ici le code promo pour bénéficier du remboursement de gaz lors de l'échange.",
+      "promoCodeLoginRequired": "Pour utiliser le code promo vous devez connecter votre portefeuille.",
+      "promoCode": {
+        "accepted": {
+          "usesLeft": "Utilisations restantes",
+          "validUntil": "Valide jusqu'au"
+        },
+        "rejected": {
+          "text": "Votre code promo n'est pas valide.",
+          "reason": {
+            "4000": "Vous avez déjà utilisé ce code promo avant. Vous ne pouvez utiliser ce code qu'une seule fois.",
+            "4001": "Le code promo a atteint son nombre d'utilisation maximum."
+          }
+        },
+        "outdated": {
+          "text": "Ce code promo a expiré."
+        },
+        "wrong": {
+          "text": "Ce code promo n'existe pas."
+        }
+      }
+    },
+    "header": {
+      "switchTheme": {
+        "title": "Basculer le thème",
+        "desc": "Thème de l'interface"
+      },
+      "language": {
+        "title": "Langue",
+        "desc": "Choisissez la langue"
+      },
+      "gasPrice": {
+        "title": "Prix du gaz",
+        "desc": "Sur la chaine Ethereum"
+      },
+      "tutorials": {
+        "title": "Tutoriels",
+        "desc": "Mode d'emploi"
+      }
+    }
+  },
+  "banner": {
+    "trading": {
+      "defaultText": "Rubic est un protocole d'échanges multi-chaînes qui vous permet d'échanger plus de 10'000 jetons sur les chaines Ethereum, BSC, Polygon, Avalanche, MoonRiver and Fantom.",
+      "customText": "Fantom est maintenant disponible en échanges multi-chaînes et sur chaîne.",
+      "link": "Essayer maintenant !"
+    },
+    "external": {
+      "text": "Complete a Cross-Chain swap to ETH on Arbitrum and get a free NFT. Become a part of Arbitrum Odyssey with Rubic!",
+      "link": "lien"
+    },
+    "zeroFees": {
+      "zeroFee": "Cross-Chain Swaps with 0% Protocol Fee",
+      "period": "Trade between Blockchains with 0% Protocol Fees from June 6th to June 27th",
+      "excluded": "*The terms of the campaign don’t include Telos, Aurora, Moonriver, Harmony, Solana, or NEAR"
+    }
+  },
+  "referralBanner": {
+    "text": "",
+    "link": "Claim New RBC Token!"
+  },
+  "volume": {
+    "title": "Volume de transaction cumulé",
+    "instantTrades": "Échanges",
+    "bridges": "Bridges",
+    "crossChain": "Échanges Cross-Chain",
+    "description": "Total"
+  },
+  "notifications": {
+    "tradeInProgress": "Échange en cours",
+    "successfulTradeTitle": "Transaction réussie",
+    "successfulCCRTradeTitle": "Transaction sur le réseau d'origine réussie",
+    "successfullySentTransaction": "La transaction a été envoyée avec succès !",
+    "successfulCCRSwapTitle": "Échange sur le réseau d'origine réussi !",
+    "checkIn": "Check in ",
+    "approveInProgress": "Approbation en cours",
+    "successApprove": "Approbation réussie",
+    "minerFee": "1inch fixe des coûts accrus sur les frais de gaz. Pour la transaction, entrez un montant moindre de {{ nativeToken }} ou recharger en {{ nativeToken }}.",
+    "solanaBeta": "Le réseau Solana est en phase Beta. Utilisez le à vos risques et périls.",
+    "stakeInProgress": "Depôt en cours",
+    "bridgeStakeInProgress": "Depôt en cours. Voir la transaction sur <a target=\"_blank\" href=\"{{url}}\">l'explorer</a>",
+    "successfulStake": "Dépôt réussi",
+    "successfulWithdraw": "Retrait réussi",
+    "withdrawInProgress": "Retrait en cours",
+    "openMobileWallet": "Veuillez signer la transaction dans votre portefeuille"
+  },
+  "buyTokens": {
+    "default": "Acheter RBC",
+    "custom": "Acheter FTM"
+  },
+  "blockchainSwap": {
+    "to": "to"
+  },
+  "airdrop": {
+    "title": "Rubic Token Claim",
+    "description": "Using this website, you can check if any of your addresses are eligible to withdraw RUBIC Tokens (RBC).",
+    "enterAddress": "Enter your Ethereum address",
+    "goodAddress": "Yes, this address is eligible for a token claim",
+    "claimedTokens": "tokens are claimable",
+    "badAddress": "Sorry, this address is not eligible to claim any tokens",
+    "button": {
+      "login": "Connect Wallet",
+      "claim": "Claim",
+      "stake": "Stake",
+      "claimed": "Claimed",
+      "staked": "Staked",
+      "wrongAddressError": "Wrong address",
+      "emptyError": "Enter holder address",
+      "changeNetwork": "Change Network to Arbitrum",
+      "incorrectAddressError": "Entered address is incorrect",
+      "notParticipant": "You are not a participant",
+      "closed": "Closed"
+    },
+    "tokenDescription": "In case of a successful claim, new RBC tokens will be allocated to your wallet",
+    "notification": {
+      "progress": "Claim in progress",
+      "success": "Claim is success",
+      "paused": "The token claim is temporarily unavailable. Please try again later",
+      "claimed": "Tokens are claimed already, please check your wallet",
+      "unknown": "Oops, something went wrong, please try again later",
+      "reject": "You rejected the execution of the transaction. Please confirm it first in order to complete the claim",
+      "modalDescription": "The address in your wallet and the address to claim tokens are different. Do you agree to claim tokens at a different address?",
+      "unauthorized": "You have to be logged in to add the Token"
+    },
+    "modals": {
+      "success": "Your tokens are on the way!",
+      "explorerLink": "Check the transaction on explorer."
+    }
+  }
+}

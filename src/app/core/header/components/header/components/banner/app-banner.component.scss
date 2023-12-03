@@ -1,0 +1,211 @@
+@use 'src/scss/core' as *;
+
+.banner {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  height: 57px;
+  max-height: 57px;
+  overflow: hidden;
+
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #36ffb4 -16.66%, #1f0a5a 22.06%, #410a63 75.35%, #36ffb4 122.84%);
+
+  @include hide-unused-ui {
+    display: none;
+  }
+
+  &__background-img {
+    &-1,
+    &-2,
+    &-3 {
+      position: absolute;
+    }
+
+    &-1 {
+      bottom: 0;
+      left: -200px;
+    }
+
+    &-2 {
+      top: 0;
+      left: -130px;
+    }
+
+    &-3 {
+      top: 0;
+      right: -130px;
+
+      transform: translateX(50%);
+    }
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    padding: 8px;
+  }
+
+  &__text {
+    @include font(25px, 1, 500, #ffffff);
+    margin: 0;
+
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+    &_bold {
+      font-weight: bold;
+    }
+
+    &_thin {
+      font-weight: lighter;
+    }
+  }
+
+  &__link {
+    @include font(19px, 1, 400, #C3FFDB);
+    display: flex;
+
+    gap: 12px;
+    align-items: center;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    &:hover {
+      img {
+        transform: translateX(5px) scale(1.1);
+      }
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+
+      margin-top: 3px;
+
+      transition: 100ms ease-in;
+    }
+  }
+}
+
+@include b($laptop-xl) {
+  .banner {
+    &__text {
+      @include font(20px, 1, 400, #ffffff);
+    }
+
+    &__link {
+      @include font(15px, 1, 400, #C3FFDB);
+    }
+  }
+}
+
+@include b($tablet) {
+  .banner {
+    gap: 25px;
+
+    &__background-img-1,
+    &__background-img-2 {
+      display: none;
+    }
+
+    &__background-img-3 {
+      position: static;
+
+      transform: translateX(0);
+    }
+
+    &__text {
+      @include font(18px, 1, 400, #ffffff);
+    }
+
+    &__link {
+      @include font(13px, 1, 400, #C3FFDB);
+    }
+  }
+}
+
+@include b($mobile-md) {
+  .banner {
+    justify-content: left;
+
+    &__container {
+      gap: 10px;
+      width: 100%;
+    }
+
+    &__background-img-3 {
+      width: 160px;
+    }
+
+    &__text {
+      @include font(15px, 1, 400, #ffffff);
+      text-align: left;
+    }
+
+    &__link {
+      gap: 5px;
+
+      img {
+        width: 15px;
+        height: 15px;
+
+        transition: 100ms ease-in;
+      }
+    }
+  }
+}
+
+@include b(490) {
+  .banner {
+    &__text {
+      white-space: initial;
+    }
+  }
+}
+
+@include b(460) {
+  .banner {
+    &__container {
+      padding: 8px 14px;
+    }
+
+    &__background-img-3 {
+      width: 120px;
+    }
+
+    &__text {
+      @include font(11px, 1, 500, #ffffff);
+
+      &_thin {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@include b($mobile-sm) {
+  .banner {
+    &__link {
+      &-text {
+        display: none;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin-top: 0;
+      }
+    }
+  }
+}

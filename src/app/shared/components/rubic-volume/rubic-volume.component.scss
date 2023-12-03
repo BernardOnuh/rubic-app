@@ -1,0 +1,34 @@
+@use 'src/scss/core' as *;
+
+.rubic-volume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+
+  &__icon {
+    width: 18px;
+    margin-right: 10px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+    color: var(--primary-text);
+  }
+
+  &__value {
+    color: var(--primary-color);
+  }
+}
+
+@include b($mobile-sm) {
+  .rubic-volume {
+    flex-direction: column;
+    gap: 0;
+  }
+}

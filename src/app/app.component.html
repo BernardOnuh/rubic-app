@@ -1,0 +1,37 @@
+<tui-root>
+  <ng-container *ngIf="isBackendAvailable">
+    <div class="wrapper" *noFrame>
+      <app-header></app-header>
+      <main class="main-content">
+        <router-outlet></router-outlet>
+      </main>
+      <app-rubic-footer class="footer"></app-rubic-footer>
+    </div>
+    <app-live-chat></app-live-chat>
+
+    <div class="iframe-wrapper" *onlyFrame>
+      <div class="iframe-content">
+        <app-header></app-header>
+        <main class="main-content">
+          <router-outlet></router-outlet>
+        </main>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-container ngProjectAs="tuiOverDialogs">
+    <app-maintenance *ngIf="isBackendAvailable === false"></app-maintenance>
+  </ng-container>
+
+  <ng-container ngProjectAs="tuiOverAlerts">
+    <!-- Content over notifications -->
+  </ng-container>
+
+  <ng-container ngProjectAs="tuiOverPortals">
+    <!-- Content over dropdowns -->
+  </ng-container>
+
+  <ng-container ngProjectAs="tuiOverHints">
+    <!-- Content over hints -->
+  </ng-container>
+</tui-root>

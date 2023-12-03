@@ -1,0 +1,17 @@
+<tui-loader [showLoader]="loading" [overlay]="true">
+  <button
+    [pseudoHover]="pseudoHovered"
+    tuiButton
+    [shape]="'rounded'"
+    type="button"
+    [size]="size"
+    [appearance]="appearance"
+    [class.full-width]="_fullWidth"
+    [disabled]="_disabled"
+    [attr.bordered]="_border"
+    (click)="buttonClick($event)"
+    (tuiHoveredChange)="onHoveredChange.emit($event)"
+  >
+    <ng-content></ng-content>
+  </button>
+</tui-loader>

@@ -1,0 +1,106 @@
+@use 'src/scss/core' as *;
+
+.maintenance {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+
+  @include b(900px) {
+    padding-top: 24px;
+
+    &__logo {
+      margin-bottom: 16px;
+    }
+
+    &__content {
+      padding: 67px 20px;
+    }
+
+    &__description {
+      max-width: unset;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    content: '';
+  }
+
+  &::before {
+    z-index: -2;
+
+    height: 100%;
+
+    background-color: #16182c;
+  }
+  
+  &::after {
+    z-index: -1;
+
+    height: 100%;
+
+    background: url('/assets/images/maintenance/maintenance-background.jpeg') center no-repeat;
+    background-size: cover;
+  }
+
+  &__logo {
+    display: block;
+    margin: 20px auto;
+  }
+
+  &__content {
+    max-width: 600px;
+    margin: auto auto 120px;
+    padding: 0 30px;
+
+    color: white;
+
+    @include b($mobile-md-minus) {
+      margin-bottom: 50px;
+    }
+
+    @include b($mobile-sm) {
+      margin-bottom: 25px;
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 114%;
+    text-align: center;
+
+    @include bh($mobile-md - 1) {
+      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &__description {
+    max-width: 350px;
+    margin: 0 auto;
+
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  &__footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+  }
+}

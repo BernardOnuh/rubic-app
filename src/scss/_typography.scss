@@ -1,0 +1,116 @@
+@use 'core' as *;
+
+.span {
+  &-roadmap-month,
+  &-roadmap-quarter {
+    margin-bottom: 5px;
+
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  &-roadmap-month {
+    margin-bottom: 20px;
+  }
+
+  &-roadmap-quarter {
+    position: absolute;
+    left: -110px;
+
+    color: rgba(#838383, 0.5);
+  }
+
+  &-title {
+    &-benefits {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 34px;
+    }
+
+    &-section {
+      display: inline-block;
+      margin-bottom: 15px;
+
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+}
+
+.cl {
+  &-green {
+    color: var(--primary-color);
+  }
+}
+
+.p {
+  &-text {
+    &-benefits {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 25px;
+      white-space: pre-line;
+    }
+  }
+}
+
+.ul {
+  &-roadmap-text {
+    margin: 0;
+    padding-left: 0;
+
+    color: black;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        display: inline-block;
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+
+        color: var(--primary-color);
+        font-weight: bold;
+        text-align: center;
+
+        content: '\2022';
+      }
+    }
+  }
+}
+
+.h3 {
+  &-block {
+    &-title-s1 {
+      font-size: 28px;
+      line-height: 44px;
+    }
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 50px;
+
+  @include b(850) {
+    padding: 10px 25px;
+  }
+}

@@ -1,0 +1,32 @@
+<footer class="rubic-footer">
+  <app-rubic-volume *noFrame></app-rubic-volume>
+  <nav class="rubic-footer__nav">
+    <a
+      *ngFor="let link of footerLinks"
+      class="rubic-footer__link"
+      [href]="link.link"
+      rel="noopener"
+      target="_blank"
+    >
+      <img [src]="link[theme$ | async]" width="22" height="20" [alt]="link.altText" />
+    </a>
+  </nav>
+  <div class="rubic-footer__copyright">
+    © Copyright Rubic {{ year }},
+    <a
+      [href]="landingDomain + '/pdf/privacy-policy.pdf'"
+      rel="noopener"
+      target="_blank"
+      class="rubic-footer__policy"
+      >{{ 'common.privacyPolicy' | translate }}</a
+    >
+    {{ ' | ' }}
+    <a
+      [href]="landingDomain + '/pdf/terms-of-service.pdf'"
+      rel="noopener"
+      target="_blank"
+      class="rubic-footer__policy"
+      >{{ 'common.termsOfService' | translate }}</a
+    >
+  </div>
+</footer>

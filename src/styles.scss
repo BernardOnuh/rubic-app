@@ -1,0 +1,245 @@
+/* Variables and mixins */
+@use 'scss/core' as *;
+@use 'scss/dark-theme' as *;
+
+/* Global scss */
+@use 'scss/fonts' as *;
+@use 'scss/typography' as *;
+
+/* Elements */
+@use 'scss/elements/icons' as *;
+@use 'scss/elements/dropdown-labels' as *;
+@use 'scss/elements/banner' as *;
+@use 'scss/elements/buttons' as *;
+
+/* TaigaUI custom styles */
+@use 'scss/taiga-styles' as *;
+
+/* External libs styles */
+@use 'scss/live-chat' as *;
+@use 'scss/libs' as *;
+
+* {
+  box-sizing: border-box;
+
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  --tui-font-text: #{$red-hat-display} !important;
+
+  box-sizing: border-box;
+  height: auto !important;
+  overflow-x: hidden;
+
+  body {
+    position: relative;
+
+    min-width: 320px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    background: var(--primary-background);
+
+    main,
+    input,
+    button,
+    select,
+    textarea {
+      font-family: $red-hat-display !important;
+    }
+  }
+}
+
+html.is-locked,
+html.is-locked body {
+  height: calc(var(--window-inner-height) - 1px);
+  overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+
+  appearance: none;
+}
+
+input[type=number] {
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
+}
+
+button {
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+}
+
+mainiframeSettingsFormcontent {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px 60px;
+}
+
+.noscroll {
+  position: fixed;
+  right: 0;
+  left: 0;
+
+  overflow: hidden;
+}
+
+.app-content-block {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+
+  @include b(1240) {
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+}
+
+.walletconnect-modal__base {
+  a,
+  a:focus,
+  a:hover {
+    color: inherit;
+  }
+}
+
+tui-dropdown {
+  min-width: 185px;
+  max-height: 560px !important;
+
+  tui-data-list-wrapper {
+    backdrop-filter: blur(24px);
+
+    tui-data-list {
+      button[role='option'] {
+        margin: 4px 0;
+        padding: 0 8px;
+
+        border: 0;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        tui-select-option {
+          display: block;
+
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 21px;
+
+          border-radius: 100px;
+
+          transition: background-color 0.1s ease;
+
+          &:hover {
+            background-color: rgba(74, 169, 86, 0.15);
+          }
+
+          tui-svg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.default-iframe-background {
+  background: linear-gradient(45deg, var(--primary-color) 20%, white);
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483001; /* cover carrot chat */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #181a19;
+  opacity: 1;
+
+  transition: opacity 0.4s ease-in-out, z-index 0.4s step-end;
+
+  &.disabled {
+    z-index: -10000;
+
+    opacity: 0;
+  }
+
+  img {
+    animation: 1.4s infinite 1s loader-icon-fadein;
+  }
+}
+
+@keyframes loader-icon-fadein {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@include b($mobile-md) {
+  tui-dropdown {
+    min-width: 155px;
+  }
+}
+
+[id^='tui-hint_price-impact'] {
+  color: var(--tui-text-01) !important;
+
+  background: rgb(238, 238, 238) !important;
+}
+
+html.dark {
+  [id^='tui-hint_price-impact'] {
+    background: rgb(56, 56, 56) !important;
+  }
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}

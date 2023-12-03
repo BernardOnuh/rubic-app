@@ -1,0 +1,12 @@
+<ng-container *ngLet="_currentComponent$ | async as currentComponentData">
+  <aside class="header-settings">
+    <app-header-settings
+      [title]="currentComponentData.titleKey"
+      [haveBackButton]="!this.isDefaultComponent"
+      (closeClick)="closeSettings()"
+      (backClick)="backToSettings()"
+    ></app-header-settings>
+
+    <div *polymorpheusOutlet="currentComponentData.component; context: _currentComponent$"></div>
+  </aside>
+</ng-container>

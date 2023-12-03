@@ -1,0 +1,33 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "types": [],
+    "baseUrl": "..",
+    "paths": {
+      "stream": ["node_modules/stream-browserify"],
+      "assert": ["node_modules/assert"],
+      "https": ["node_modules/https-browserify"],
+      "os": ["node_modules/os-browserify"],
+      "http": ["node_modules/stream-http"],
+      "crypto": ["node_modules/crypto-browserify"],
+      "querystring": ["./node_modules/querystring-es3"],
+      "fs": ["node_modules/browserify-fs"],
+      "path": ["node_modules/path-browserify"],
+      "@app/*": ["src/app/*"],
+      "@core/*": ["src/app/core/*"],
+      "@features/*": ["src/app/features/*"],
+      "@shared/*": ["src/app/shared/*"]
+    }
+  },
+  "files": [
+    "main.ts",
+    "polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+  ],
+  "angularCompilerOptions": {
+    "strictTemplates": true
+  }
+}
