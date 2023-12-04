@@ -75,17 +75,9 @@
 
   @include b($mobile-md) {
     .rubic-header-mobile {
-      display: flex; // Enable flexbox properties
-      align-items: flex-start; // Align items at the top
       justify-content: space-between; // Add this line to justify content between items
     }
-
-    &__menu {
-      display: inline-flex;
-      margin-right: auto;
-    }
   }
-  
   
   @include iframe {
     margin-right: 50px;
@@ -233,6 +225,14 @@
       z-index: 99999;
 
       display: flex;
+      flex-direction: column; // Change to column direction for mobile view
+      align-items: flex-start; // Align items at the start
+      justify-content: space-between; // Add this line to justify content between items
+    }
+
+    &__menu {
+      display: inline-flex;
+      margin-right: auto;
     }
 
     &__profile-user {
@@ -241,23 +241,15 @@
       transform: scale(0.9);
     }
 
-    &__login {
-      display: none;
-    }
-
-    &__menu {
-      display: none;
-    }
-
-    &__settings {
-      display: none;
-    }
-
+    &__login,
+    &__settings,
+    &__menu,
     &__logo_hide {
       display: none;
     }
   }
 }
+
 
 @include b($mobile-md) {
   .rubic-header {

@@ -27,7 +27,15 @@
   </a>
   
 
-  
+  <app-rubic-menu-toggler *noFrame class="rubic-header__menu">
+    <app-rubic-menu
+      [swapActive]="rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.INSTANT_TRADE"
+      [crossChainActive]="
+        rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.CROSS_CHAIN_ROUTING
+      "
+      (swapClick)="navigateToSwaps()"
+    ></app-rubic-menu>
+  </app-rubic-menu-toggler>
 
   <nav *noFrame class="rubic-header__nav">
     <a
@@ -93,14 +101,5 @@
 
   <div class="rubic-header-mobile">
     <app-mobile-menu *noFrame></app-mobile-menu>
-    <app-rubic-menu-toggler *noFrame class="rubic-header-mobile__menu">
-    <app-rubic-menu
-      [swapActive]="rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.INSTANT_TRADE"
-      [crossChainActive]="
-        rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.CROSS_CHAIN_ROUTING
-      "
-      (swapClick)="navigateToSwaps()"
-    ></app-rubic-menu>
-  </app-rubic-menu-toggler>
   </div>
 </header>
