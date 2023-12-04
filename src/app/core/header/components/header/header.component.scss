@@ -75,10 +75,12 @@
 
   @include b($mobile-md) {
     .rubic-header-mobile {
-      transform: unset;
+      justify-content: space-between; // Add this line to justify content between items
+
+      transform: unset; // This line might be unnecessary, depending on your needs
     }
   }
-
+  
   @include iframe {
     margin-right: 50px;
     padding: 0 !important;

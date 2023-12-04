@@ -9,6 +9,8 @@
 
   font-weight: 300;
 
+  background-color: black;
+
   @include hide-unused-ui {
     display: none;
   }
