@@ -13,6 +13,7 @@
   margin-bottom: 5px;
 
   color: #fff;
+  font-weight: 700;
   font-size: 30px;
   text-align: center;    
 }
@@ -41,14 +42,16 @@
   }
 }
 
+.router-outlet-wrapper {
+  border: 5px solid transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+}
+
 .main-content {
   width: 100%;
   padding: 0 20px 60px;
 
-  border: 3px solid transparent;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
-  
   @include hide-unused-ui {
     margin: 0;
     padding: 0;

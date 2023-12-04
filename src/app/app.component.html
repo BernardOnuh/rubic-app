@@ -6,21 +6,24 @@
         <p>FETS DEX</p>
       </div>
       <main class="main-content">
-        <router-outlet></router-outlet>
+        <div class="router-outlet-wrapper">
+          <router-outlet></router-outlet>
+        </div>
       </main>
       <app-rubic-footer class="footer"></app-rubic-footer>
     </div>
-    <!--<app-live-chat></app-live-chat>-->
 
     <div class="iframe-wrapper" *onlyFrame>
       <div class="iframe-content"></div>
-        <app-header></app-header>
-        <div class="header-text">
-          <p>FETS DEX</p>
-        </div>
-        <main class="main-content">
+      <app-header></app-header>
+      <div class="header-text">
+        <p>FETS DEX</p>
+      </div>
+      <main class="main-content">
+        <div class="router-outlet-wrapper">
           <router-outlet></router-outlet>
-        </main>
+        </div>
+      </main>
     </div>
   </ng-container>
 
