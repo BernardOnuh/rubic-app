@@ -43,7 +43,8 @@ html.dark {
   }
 
   body {
-    background: var(--primary-background);
+    background: url('../assets/bg.jpg') center center no-repeat fixed;
+    background-size: cover;
 
     &.default-iframe-background {
       background: linear-gradient(45deg, black, var(--primary-color)) !important;
