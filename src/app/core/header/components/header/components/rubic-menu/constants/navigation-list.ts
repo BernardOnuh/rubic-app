@@ -66,27 +66,27 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
     {
       translateKey: 'Twitter',
       type: 'external',
-      link: 'https://twitter.com/CryptoRubic'
+      link: 'https://twitter.com/fetsedgetech'
     },
     {
       translateKey: 'Telegram',
       type: 'external',
-      link: 'https://t.me/cryptorubic_chat'
+      link: 'https://t.me/FETechnologies'
     },
     {
       translateKey: 'Discord',
       type: 'external',
-      link: 'https://discord.gg/7EYzPbWKFQ'
+      link: 'https://discord.com/invite/UvMnZtUWvY'
     },
     {
       translateKey: 'Coinmarketcap',
       type: 'external',
-      link: 'https://coinmarketcap.com/currencies/rubic'
+      link: 'https://coinmarketcap.com/currencies/fets'
     },
     {
       translateKey: 'Coingecko',
       type: 'external',
-      link: 'https://www.coingecko.com/en/coins/rubic'
+      link: 'https://www.geckoterminal.com/eth/pools/0x5a424aba0e5400d90eb88abaa790fefed54c62c7?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults'
     }
   ]
 };

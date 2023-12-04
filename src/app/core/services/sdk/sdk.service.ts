@@ -81,8 +81,8 @@ export class SdkService {
     onChainIntegratorAddress?: string;
   }): Promise<void> {
     const defaultProvidersAddresses = {
-      crossChain: '0x3fFF9bDEb3147cE13A7FFEf85Dae81874E0AEDbE',
-      onChain: '0x3b9Ce17A7bD729A0abc5976bEAb6D7d150fbD0d4'
+      crossChain: '0xAbB9f6d3536F60AC39998970d2eDadcCB5203873',
+      onChain: '0xAbB9f6d3536F60AC39998970d2eDadcCB5203873'
     };
     this.currentConfig = {
       ...this.defaultConfig,
