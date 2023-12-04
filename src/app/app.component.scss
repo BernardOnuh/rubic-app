@@ -42,10 +42,12 @@
   }
 }
 
-.router-outlet-wrapper {
-  border: 5px solid transparent;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+@include b($mobile-md) {
+  .router-outlet-wrapper {
+    border: 5px solid transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 191, 255, 0.8);
+  }
 }
 
 .main-content {
@@ -62,8 +64,8 @@
       margin: 0 auto;
 
       @include b($mobile-md) {
-        margin: 0;
-        
+        margin: 0 auto 20px;
+
         @include iframe {
           margin: 0 auto;
         }
