@@ -252,17 +252,16 @@
 
 .exception {
   display: none;
-}
 
-@include b($mobile-md) {
-  .exception {
-    position: relative;
+  @include b($mobile-md) {
     position: absolute;
     top: 0;
     right: 0;
-    
+
+    display: block; // Add this line to make it visible on mobile
   }
 }
+
 
 @include b($mobile-md) {
   .rubic-header {
