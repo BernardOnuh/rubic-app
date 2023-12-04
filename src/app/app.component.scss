@@ -62,8 +62,8 @@
       margin: 0 auto;
 
       @include b($mobile-md) {
-        margin: 0 auto 40px;
-
+        margin: 0;
+        
         @include iframe {
           margin: 0 auto;
         }
@@ -110,8 +110,8 @@
   }
 }
 
-@include b($mobile-md) {
-  .footer {
-    display: none;
-  }
-}
+//@include b($mobile-md) {
+//  .footer {
+//    display: none;
+//  }
+//}
