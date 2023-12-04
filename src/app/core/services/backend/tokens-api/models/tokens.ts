@@ -1,5 +1,4 @@
-{
-  /*import { List } from 'immutable';
+import { List } from 'immutable';
 import { Token } from '@shared/models/tokens/token';
 import { TokenSecurity } from '@shared/models/tokens/token-security';
 import { BackendBlockchain } from '@shared/constants/blockchain/backend-blockchains';
@@ -59,5 +58,4 @@ export interface TokensListResponse {
   next: string;
 }
 
-export const DEFAULT_PAGE_SIZE = 200;*/
-}
+export const DEFAULT_PAGE_SIZE = 200;
