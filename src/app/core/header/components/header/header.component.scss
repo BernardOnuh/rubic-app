@@ -250,7 +250,9 @@
   }
 }
 
-
+.exception {
+  display: none;
+}
 
 @include b($mobile-md) {
   .exception {

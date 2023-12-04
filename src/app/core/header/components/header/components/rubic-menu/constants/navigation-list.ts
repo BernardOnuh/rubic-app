@@ -42,12 +42,6 @@ export const NAVIGATION_LIST = [
     type: 'external',
     link: EXTERNAL_LINKS.LANDING,
     imagePath: `${defaultSrc}team.svg`
-  },
-  {
-    translateKey: 'Testnet App',
-    type: 'external',
-    link: EXTERNAL_LINKS.TESTNET_APP,
-    imagePath: `${defaultSrc}testnet.svg`
   }
 ] as NavigationItem[];
 
@@ -60,21 +54,9 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       active: false
     },
     {
-      translateKey: 'Staking',
-      type: 'internal',
-      link: ROUTE_PATH.STAKING,
-      active: false
-    },
-    {
       translateKey: 'Limit Order',
       type: 'internal',
       link: ROUTE_PATH.LIMIT_ORDER,
-      active: false
-    },
-    {
-      translateKey: 'Swap to Earn',
-      type: 'internal',
-      link: ROUTE_PATH.SWAP_AND_EARN,
       active: false
     },
     {
@@ -95,31 +77,6 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       translateKey: 'Documentation',
       type: 'external',
       link: 'https://docs.rubic.finance/rubic/introduction'
-    },
-    {
-      translateKey: 'SDK',
-      type: 'external',
-      link: 'https://tools.rubic.exchange/sdk'
-    },
-    {
-      translateKey: 'Widget',
-      type: 'external',
-      link: 'https://tools.rubic.exchange/widget'
-    },
-    {
-      translateKey: 'About',
-      type: 'external',
-      link: EXTERNAL_LINKS.LANDING
-    },
-    {
-      translateKey: 'FAQ',
-      type: 'external',
-      link: ROUTE_PATH.FAQ
-    },
-    {
-      translateKey: 'Testnet App',
-      type: 'external',
-      link: EXTERNAL_LINKS.TESTNET_APP
     }
   ],
   ['Social']: [
@@ -142,21 +99,6 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       translateKey: 'Telegram',
       type: 'external',
       link: 'https://t.me/cryptorubic_chat'
-    },
-    {
-      translateKey: 'Dune',
-      type: 'external',
-      link: 'https://dune.com/rubic_exchange/rubic-general-dashboard'
-    },
-    {
-      translateKey: 'Mail',
-      type: 'external',
-      link: 'mailto:support@rubic.finance'
-    },
-    {
-      translateKey: 'Medium',
-      type: 'external',
-      link: 'https://cryptorubic.medium.com/'
     },
     {
       translateKey: 'Discord',
