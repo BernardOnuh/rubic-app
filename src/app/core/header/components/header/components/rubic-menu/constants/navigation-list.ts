@@ -3,7 +3,7 @@ import { EXTERNAL_LINKS, ROUTE_PATH } from '@shared/constants/common/links';
 
 const defaultSrc = 'assets/images/icons/navigation/';
 
-type Section = 'Trade' | 'More' | 'Social' | 'Legal & Privacy';
+type Section = 'Trade' | 'Social';
 
 export const NAVIGATION_LIST = [
   {
@@ -53,47 +53,20 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       link: ROUTE_PATH.NONE,
       active: false
     },
-    {
-      translateKey: 'Limit Order',
-      type: 'internal',
-      link: ROUTE_PATH.LIMIT_ORDER,
-      active: false
-    },
+
     {
       translateKey: 'Revoke Approval',
       type: 'internal',
       link: ROUTE_PATH.REVOKE_APPROVAL,
       active: false
-    },
-    {
-      translateKey: 'ChangeNow Tx',
-      type: 'internal',
-      link: ROUTE_PATH.CHANGENOW_RECENT_TRADES,
-      active: false
     }
   ],
-  ['More']: [
-    {
-      translateKey: 'Documentation',
-      type: 'external',
-      link: 'https://docs.rubic.finance/rubic/introduction'
-    }
-  ],
+
   ['Social']: [
-    {
-      translateKey: 'Facebook',
-      type: 'external',
-      link: 'https://www.facebook.com/RubicDEX/'
-    },
     {
       translateKey: 'Twitter',
       type: 'external',
       link: 'https://twitter.com/CryptoRubic'
-    },
-    {
-      translateKey: 'Reddit',
-      type: 'external',
-      link: 'https://www.reddit.com/r/Rubic/new/'
     },
     {
       translateKey: 'Telegram',
@@ -114,28 +87,6 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       translateKey: 'Coingecko',
       type: 'external',
       link: 'https://www.coingecko.com/en/coins/rubic'
-    },
-    {
-      translateKey: 'Youtube',
-      type: 'external',
-      link: 'https://www.youtube.com/c/RubicExchange'
-    },
-    {
-      translateKey: 'Coinmarketcap',
-      type: 'external',
-      link: 'https://www.defipulse.com/'
-    }
-  ],
-  ['Legal & Privacy']: [
-    {
-      translateKey: 'Privacy Policy',
-      type: 'external',
-      link: 'https://rubic.exchange/pdf/RubicPrivacyPolicy.pdf'
-    },
-    {
-      translateKey: 'Terms of Service',
-      type: 'external',
-      link: 'https://rubic.exchange/pdf/TermsOfService.pdf'
     }
   ]
 };
