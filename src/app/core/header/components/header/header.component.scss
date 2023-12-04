@@ -79,6 +79,11 @@
       align-items: flex-start; // Align items at the top
       justify-content: space-between; // Add this line to justify content between items
     }
+
+    &__menu {
+      display: inline-flex;
+      margin-right: auto;
+    }
   }
   
   
