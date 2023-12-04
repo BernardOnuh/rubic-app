@@ -76,8 +76,6 @@
   @include b($mobile-md) {
     .rubic-header-mobile {
       justify-content: space-between; // Add this line to justify content between items
-
-      transform: unset; // This line might be unnecessary, depending on your needs
     }
   }
   
