@@ -75,9 +75,12 @@
 
   @include b($mobile-md) {
     .rubic-header-mobile {
+      display: flex; // Enable flexbox properties
+      align-items: flex-start; // Align items at the top
       justify-content: space-between; // Add this line to justify content between items
     }
   }
+  
   
   @include iframe {
     margin-right: 50px;
