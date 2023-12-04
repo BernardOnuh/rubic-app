@@ -1,5 +1,32 @@
 @use 'src/scss/core' as *;
 
+.additional-content {
+  @include b($mobile-md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 20px;
+
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+    a {
+      padding: 0 5px;
+
+      color: white;
+      text-decoration: none;
+
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 .rubic-footer {
   display: flex;
   flex-direction: column;

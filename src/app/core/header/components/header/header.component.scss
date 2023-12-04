@@ -251,12 +251,28 @@
 }
 
 
+
+@include b($mobile-md) {
+  .exception {
+    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+  }
+}
+
 @include b($mobile-md) {
   .rubic-header {
     &__logo {
       img {
         margin-left: 3px;
       }
+    }
+
+    &__menu {
+      display: inline-flex;
+      margin-left: auto;
     }
 
     &__buy-token {
