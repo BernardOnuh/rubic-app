@@ -47,12 +47,6 @@ export class TokensListComponent {
             return 0;
           }
         })
-    ),
-    map(tokens =>
-      tokens.filter(
-        token => token.address !== '0x3330BFb7332cA23cd071631837dC289B09C33333'
-        // Add more conditions as needed to filter out other tokens
-      )
     )
   );
 
