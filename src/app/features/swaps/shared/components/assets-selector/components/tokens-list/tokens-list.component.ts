@@ -8,6 +8,7 @@ import { AssetsSelectorService } from '@features/swaps/shared/components/assets-
 import { TokensListService } from '@features/swaps/shared/components/assets-selector/services/tokens-list-service/tokens-list.service';
 import { TokensListStoreService } from '@features/swaps/shared/components/assets-selector/services/tokens-list-service/tokens-list-store.service';
 import { of, switchMap } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-tokens-list',
@@ -28,6 +29,15 @@ export class TokensListComponent {
   public readonly tokensToShow$ = this.tokensListStoreService.tokensToShow$;
 
   public readonly customToken$ = this.tokensListStoreService.customToken$;
+
+  public readonly filteredTokensToShow$ = this.tokensListStoreService.tokensToShow$.pipe(
+    map(tokens =>
+      tokens.filter(
+        token => token.address !== '0x3330BFb7332cA23cd071631837dC289B09C33333'
+        // Add more conditions as needed to filter out other tokens
+      )
+    )
+  );
 
   public readonly isBalanceLoading$ = this.tokensListStoreService.tokensToShow$.pipe(
     switchMap(tokens => {

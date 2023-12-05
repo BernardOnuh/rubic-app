@@ -19,7 +19,7 @@
             >
               <li
                 *cdkVirtualFor="
-                  let token of tokensToShow;
+                let token of filteredTokensToShow$ | async;
                   let i = index;
                   templateCacheSize: 0;
                   trackBy: trackByFn
@@ -31,7 +31,7 @@
                 tuiHintDirection="bottom-right"
                 (click)="onTokenSelect(token)"
               >
-                <!--<app-tokens-list-element [token]="token" [balanceLoading]="isBalanceLoading$ | async"></app-tokens-list-element>-->
+                <app-tokens-list-element [token]="token" [balanceLoading]="isBalanceLoading$ | async"></app-tokens-list-element>
               </li>
             </cdk-virtual-scroll-viewport>
             </ul>
@@ -42,7 +42,7 @@
         <!--horizontal iframe -->
         <ul class="tokens-list-horizontal-iframe" *onlyFrame="'horizontal'">
           <li
-            *ngFor="let token of tokensToShow; let i = index"
+            *ngFor="let token of filteredTokensToShow$ | async; let i = index"
             class="tokens-list-horizontal-iframe__item"
             [ngClass]="{
               'tokens-list-horizontal-iframe__item_disabled': !token.available
