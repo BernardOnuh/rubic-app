@@ -5,18 +5,18 @@ export const FOOTER_LINKS: FooterLink[] = [
     dark: 'assets/images/contacts/twitter.svg',
     light: 'assets/images/contacts/twitter_light.svg',
     altText: 'Twitter',
-    link: 'https://twitter.com/CryptoRubic'
+    link: 'https://twitter.com/fetsedgetech'
   },
   {
     dark: 'assets/images/contacts/telegram.svg',
     light: 'assets/images/contacts/telegram_light.svg',
     altText: 'Telegram',
-    link: 'https://t.me/cryptorubic_chat'
+    link: 'https://t.me/FETechnologies'
   },
   {
     dark: 'assets/images/contacts/discord.svg',
     light: 'assets/images/contacts/discord_light.svg',
     altText: 'Discord',
-    link: 'https://discord.gg/7EYzPbWKFQ'
+    link: 'https://discord.com/invite/UvMnZtUWvY'
   }
 ];
