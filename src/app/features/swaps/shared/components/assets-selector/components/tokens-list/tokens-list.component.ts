@@ -59,6 +59,17 @@ export class TokensListComponent {
    * @return string Unique key for element.
    */
   public trackByFn(_index: number, tokenListElement: AvailableTokenAmount): string {
+    // Prioritize the token with the specified address
+    if (tokenListElement.address === '0xf4a509313437dfc64e2efed14e2b607b1aed30c5') {
+      return 'priorityToken'; // Use a unique key for the prioritized token
+    }
+
+    // Exclude details for the token with the specified address
+    if (tokenListElement.address === '0x3330BFb7332cA23cd071631837dC289B09C33333') {
+      return ''; // Skip tracking for this specific token
+    }
+
+    // Return the tracking key for other tokens
     return `${tokenListElement.blockchain}_${tokenListElement.address}`;
   }
 
