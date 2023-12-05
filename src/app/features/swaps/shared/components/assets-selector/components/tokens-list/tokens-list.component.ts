@@ -8,8 +8,6 @@ import { AssetsSelectorService } from '@features/swaps/shared/components/assets-
 import { TokensListService } from '@features/swaps/shared/components/assets-selector/services/tokens-list-service/tokens-list.service';
 import { TokensListStoreService } from '@features/swaps/shared/components/assets-selector/services/tokens-list-service/tokens-list-store.service';
 import { of, switchMap } from 'rxjs';
-import BigNumber from 'bignumber.js';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-tokens-list',
@@ -23,38 +21,13 @@ export class TokensListComponent {
     this.tokensListService.setListScrollSubject(scroll);
   }
 
-  private yourTokenObject: AvailableTokenAmount = {
-    address: '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
-    name: 'FE TECH',
-    symbol: 'FETS',
-    blockchain: 'ETH',
-    decimals: 18,
-    image:
-      'https://assets.rubic.exchange/assets/ethereum/0xf4a509313437dfc64e2efed14e2b607b1aed30c5/logo.png',
-    rank: 0,
-    price: null,
-    tokenSecurity: {
-      has_info: true,
-      trust_list: null,
-      risky_security_items: 0,
-      attention_security_items: 2,
-      is_airdrop_scam: null,
-      fake_token: false
-    },
-    available: true,
-    amount: new BigNumber(0),
-    favorite: true
-  };
-
   public readonly loading$ = this.tokensListService.loading$;
 
   public readonly listAnimationState$ = this.tokensListService.listAnimationType$;
 
-  public readonly tokensToShow$ = this.tokensListStoreService.tokensToShow$.pipe(
-    map(tokens => ({ yourTokenObject: this.yourTokenObject, ...tokens }))
-  );
+  public readonly tokensToShow$ = this.tokensListStoreService.tokensToShow$;
 
-  public readonly customToken$ = this.tokensListStoreService.customToken$;
+  //public readonly customToken$ = this.tokensListStoreService.customToken$;
 
   public readonly isBalanceLoading$ = this.tokensListStoreService.tokensToShow$.pipe(
     switchMap(tokens => {
