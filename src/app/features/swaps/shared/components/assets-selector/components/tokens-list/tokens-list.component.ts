@@ -27,7 +27,7 @@ export class TokensListComponent {
 
   public readonly tokensToShow$ = this.tokensListStoreService.tokensToShow$;
 
-  //public readonly customToken$ = this.tokensListStoreService.customToken$;
+  public readonly customToken$ = this.tokensListStoreService.customToken$;
 
   public readonly isBalanceLoading$ = this.tokensListStoreService.tokensToShow$.pipe(
     switchMap(tokens => {
