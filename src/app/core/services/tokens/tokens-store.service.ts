@@ -301,7 +301,7 @@ export class TokensStoreService {
         symbol: token.symbol,
         decimals: token.decimals,
         image: '',
-        rank: 1,
+        rank: 0,
         price: null,
         amount: amount || new BigNumber(NaN)
       })),
