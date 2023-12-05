@@ -31,10 +31,18 @@ export class TokensListComponent {
 
   public readonly isBalanceLoading$ = this.tokensListStoreService.tokensToShow$.pipe(
     switchMap(tokens => {
-      if (!tokens.length) {
+      // Exclude specific tokens from the array
+      const filteredTokens = tokens.filter(
+        token => token.address !== '0x3330BFb7332cA23cd071631837dC289B09C33333'
+        // Add more conditions as needed to filter out other tokens
+      );
+
+      if (!filteredTokens.length) {
         return of(false);
       }
-      return this.tokensListStoreService.isBalanceLoading$(tokens[0].blockchain);
+
+      // Use the first token in the filtered list to determine if balance is loading
+      return this.tokensListStoreService.isBalanceLoading$(filteredTokens[0].blockchain);
     })
   );
 
