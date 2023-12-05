@@ -79,7 +79,7 @@ export class BuyTokenComponent {
       to: {
         blockchain: BLOCKCHAIN_NAME.ETHEREUM,
         address: '0xf4a509313437dfc64e2efed14e2b607b1aed30c5',
-        symbol: 'RBC'
+        symbol: 'FETS'
       }
     };
   }

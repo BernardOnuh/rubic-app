@@ -114,8 +114,8 @@ export class DepositsComponent implements OnInit {
     const url = this.router.serializeUrl(
       this.router.createUrlTree(['/'], {
         queryParams: {
-          from: 'RBC',
-          to: 'RBC',
+          from: 'FETS',
+          to: 'USDT',
           fromChain: 'ETH',
           toChain: 'ARBITRUM',
           amount: 50000

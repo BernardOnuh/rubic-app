@@ -16,8 +16,8 @@ export const defaultFormParameters = {
       [BLOCKCHAIN_NAME.TELOS]: 'TLOS'
     },
     to: {
-      [BLOCKCHAIN_NAME.ETHEREUM]: 'RBC',
-      [BLOCKCHAIN_NAME.BINANCE_SMART_CHAIN]: 'BRBC'
+      [BLOCKCHAIN_NAME.ETHEREUM]: 'FETS',
+      [BLOCKCHAIN_NAME.BINANCE_SMART_CHAIN]: 'USDT'
     },
     amount: '1'
   }
