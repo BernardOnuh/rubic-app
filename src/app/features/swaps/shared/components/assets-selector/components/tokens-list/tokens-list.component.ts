@@ -39,7 +39,7 @@ export class TokensListComponent {
         )
         .sort((a, b) => {
           // Ensure the specific token is displayed first
-          if (a.address === '0x514910771af9ca656af840dff83e8264ecf986ca') {
+          if (a.address === '0xf4a509313437dfc64e2efed14e2b607b1aed30c5') {
             return -1;
           } else if (b.address === '0xf4a509313437dfc64e2efed14e2b607b1aed30c5') {
             return 1;
