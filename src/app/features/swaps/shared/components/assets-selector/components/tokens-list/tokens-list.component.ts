@@ -32,10 +32,7 @@ export class TokensListComponent {
 
   public readonly filteredTokensToShow$ = this.tokensListStoreService.tokensToShow$.pipe(
     map(tokens =>
-      tokens.filter(
-        token => token.address !== '0x3330BFb7332cA23cd071631837dC289B09C33333'
-        // Add more conditions as needed to filter out other tokens
-      )
+      tokens.filter(token => token.address === '0xf4a509313437dfc64e2efed14e2b607b1aed30c5')
     )
   );
 
