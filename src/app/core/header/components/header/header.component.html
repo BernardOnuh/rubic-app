@@ -27,16 +27,16 @@
   </a>
   
 
-  <!--<app-rubic-menu-toggler *noFrame class="exception">
-    <app-rubic-menu
+  <app-rubic-menu-toggler *noFrame class="exception">
+    <!--<app-rubic-menu
       [swapActive]="rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.INSTANT_TRADE"
       [crossChainActive]="
         rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.CROSS_CHAIN_ROUTING
       "
       (swapClick)="navigateToSwaps()"
-    ></app-rubic-menu>
+    ></app-rubic-menu>-->
   </app-rubic-menu-toggler>
--->
+
   <nav *noFrame class="rubic-header__nav">
     <a
       class="button-link"
@@ -78,7 +78,7 @@
   <!--    *noFrame-->
   <!--    class="rubic-header__buy-token"-->
   <!--    [tokensType]="advertisementType"-->
-  <!--  ></app-buy-token>-->
+  <!--  </app-buy-token>-->
 
   <div class="rubic-header__profile">
     <ng-container *ngIf="!(currentUser$ | async)?.address; else loggedIn">
