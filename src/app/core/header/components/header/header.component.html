@@ -28,13 +28,13 @@
   
 
   <app-rubic-menu-toggler *noFrame class="exception">
-    <!--<app-rubic-menu
+    <app-rubic-menu
       [swapActive]="rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.INSTANT_TRADE"
       [crossChainActive]="
         rootPath && (swapType$ | async) === SWAP_PROVIDER_TYPE.CROSS_CHAIN_ROUTING
       "
       (swapClick)="navigateToSwaps()"
-    ></app-rubic-menu>-->
+    ></app-rubic-menu>
   </app-rubic-menu-toggler>
 
   <nav *noFrame class="rubic-header__nav">
