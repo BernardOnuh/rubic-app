@@ -54,7 +54,8 @@ export const PROVIDERS_LIST: ReadonlyArray<WalletProvider> = [
     supportsInVerticalMobileIframe: true,
     supportsInIframe: true,
     disabled: false
-  },*/ {
+  },*/
+  {
     name: 'WalletConnect',
     value: WALLET_NAME.WALLET_CONNECT,
     img: './assets/images/icons/wallets/walletconnect.svg',
