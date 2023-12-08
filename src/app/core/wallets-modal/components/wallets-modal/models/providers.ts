@@ -28,7 +28,8 @@ export const PROVIDERS_LIST: ReadonlyArray<WalletProvider> = [
     supportsInIframe: false,
     disabled: false
   },
-  {
+  ,
+  /* {
     name: 'Trust Wallet',
     value: WALLET_NAME.TRUST_WALLET,
     img: './assets/images/icons/wallets/trust.svg',
@@ -40,7 +41,7 @@ export const PROVIDERS_LIST: ReadonlyArray<WalletProvider> = [
     supportsInVerticalMobileIframe: true,
     supportsInIframe: false,
     disabled: false
-  },
+  }
   {
     name: 'Coinbase Wallet',
     value: WALLET_NAME.WALLET_LINK,
@@ -53,8 +54,7 @@ export const PROVIDERS_LIST: ReadonlyArray<WalletProvider> = [
     supportsInVerticalMobileIframe: true,
     supportsInIframe: true,
     disabled: false
-  },
-  {
+  },*/ {
     name: 'WalletConnect',
     value: WALLET_NAME.WALLET_CONNECT,
     img: './assets/images/icons/wallets/walletconnect.svg',
