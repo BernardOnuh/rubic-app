@@ -50,10 +50,6 @@
   }
 }
 
-.swap-container {
-  display: none;
-}
-
 @include b($mobile-md) {
   .swap-container {
     display: flex;
