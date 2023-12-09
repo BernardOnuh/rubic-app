@@ -28,8 +28,6 @@ export const PROVIDERS_LIST: ReadonlyArray<WalletProvider> = [
     supportsInIframe: false,
     disabled: false
   },
-  ,
-  ,
   /* {
     name: 'Trust Wallet',
     value: WALLET_NAME.TRUST_WALLET,
