@@ -53,7 +53,12 @@ export const MOBILE_NAVIGATION_LIST: { [key in Section]: NavigationItem[] } = {
       link: ROUTE_PATH.NONE,
       active: false
     },
-
+    {
+      translateKey: 'Limit Order',
+      type: 'internal',
+      link: ROUTE_PATH.LIMIT_ORDER,
+      active: false
+    },
     {
       translateKey: 'Revoke Approval',
       type: 'internal',
