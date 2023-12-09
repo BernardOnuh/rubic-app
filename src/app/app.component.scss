@@ -50,6 +50,21 @@
   }
 }
 
+.swap-container {
+  display: none;
+}
+
+@include b($mobile-md) {
+  .swap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+  }
+}
+
 .main-content {
   width: 100%;
   padding: 0 20px 60px;
